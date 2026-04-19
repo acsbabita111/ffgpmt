@@ -1,213 +1,173 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FFGPMT TRUST</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
-<style>
-:root{
-  --bg:#f6f7fb;
-  --card:#ffffff;
-  --text:#111827;
-  --muted:#6b7280;
-  --green:#16A34A;
-  --blue:#2563EB;
-  --shadow:0 6px 16px rgba(0,0,0,0.08);
-}
+  <title>FFGPMT | फ्रीडम फाइटर गंगाधर प्रसाद मेमोरियल ट्रस्ट</title>
 
-*{box-sizing:border-box}
+  <!-- Language SEO -->
+  <link rel="alternate" hreflang="hi" href="https://ffgpmt.org/index.html">
+  <link rel="alternate" hreflang="en" href="https://ffgpmt.org/en/index.html">
+  <link rel="alternate" hreflang="ar" href="https://ffgpmt.org/ar/index.html">
+  <link rel="alternate" hreflang="x-default" href="https://ffgpmt.org/index.html">
 
-body{
-  margin:0;
-  font-family:sans-serif;
-  background:var(--bg);
-  color:var(--text);
-  max-width:430px;
-  margin:auto;
-  padding:10px;
-}
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 430px;
+      margin: auto;
+      padding: 12px;
+      background: #f8fafc;
+      color: #111827;
+    }
 
-/* HEADER */
-.header{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  margin-bottom:8px;
-}
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 14px;
+      margin-bottom: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
 
-.header img{
-  width:44px;
-}
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
-.title{
-  font-weight:700;
-  font-size:17px;
-}
+    .logo {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+    }
 
-/* LINKS */
-.meta{
-  font-size:13px;
-  color:var(--muted);
-  margin-bottom:6px;
-}
+    .title {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 1.3;
+    }
 
-.meta a{
-  color:var(--blue);
-  text-decoration:none;
-  font-weight:600;
-  margin:0 3px;
-}
+    .subtitle {
+      font-size: 12px;
+      color: #6b7280;
+    }
 
-/* HERO */
-.hero{
-  position:relative;
-  margin-top:8px;
-}
+    .lang {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 8px;
+    }
 
-.hero img{
-  width:100%;
-  border-radius:14px;
-  display:block;
-}
+    .lang a {
+      margin: 0 6px;
+      text-decoration: none;
+      color: #2563eb;
+      font-weight: 500;
+    }
 
-/* HERO TEXT */
-.hero-text{
-  position:absolute;
-  left:12px;
-  right:12px;
-  bottom:14px;
-  color:#fff;
-  font-weight:700;
-  font-size:18px;
-  line-height:1.3;
-  background:rgba(0,0,0,0.45);
-  padding:10px 12px;
-  border-radius:10px;
-}
+    .hero {
+      width: 100%;
+      border-radius: 12px;
+    }
 
-/* BUTTON */
-.btn{
-  display:block;
-  text-align:center;
-  margin-top:10px;
-  padding:14px;
-  background:var(--green);
-  color:#fff;
-  border-radius:12px;
-  font-weight:700;
-  text-decoration:none;
-  box-shadow:var(--shadow);
-}
+    .hero-text {
+      position: relative;
+      margin-top: -60px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      background: rgba(0,0,0,0.45);
+      padding: 8px;
+      border-radius: 8px;
+    }
 
-/* CARD */
-.card{
-  background:var(--card);
-  padding:14px;
-  border-radius:14px;
-  margin-top:12px;
-  box-shadow:var(--shadow);
-}
+    .btn {
+      display: block;
+      text-align: center;
+      background: #16a34a;
+      color: white;
+      padding: 14px;
+      border-radius: 10px;
+      font-size: 16px;
+      text-decoration: none;
+      margin-top: 10px;
+      font-weight: bold;
+    }
 
-.card h3{
-  margin:0 0 6px 0;
-  font-size:16px;
-}
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
 
-.card p{
-  margin:0;
-  color:var(--muted);
-  font-size:14px;
-}
-
-/* PDF LINKS */
-.pdf a{
-  display:block;
-  margin-top:8px;
-  padding:10px;
-  background:#eef2ff;
-  border-radius:10px;
-  text-decoration:none;
-  color:#111;
-  font-size:14px;
-}
-
-/* FOOTER */
-.footer{
-  text-align:center;
-  font-size:12px;
-  color:var(--muted);
-  margin-top:18px;
-}
-
-/* RTL support (Arabic) */
-html[lang="ar"] body{
-  direction:rtl;
-  text-align:right;
-}
-</style>
+    .doc a {
+      display: block;
+      padding: 10px;
+      background: #eef2ff;
+      border-radius: 8px;
+      margin-top: 6px;
+      text-decoration: none;
+      color: #1e3a8a;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-<div class="header">
-  <img src="logo.png" alt="logo">
-  <div class="title">FFGPMT TRUST</div>
-</div>
+  <!-- HEADER -->
+  <div class="card">
+    <div class="header">
+      <img src="logo.png" class="logo" />
+      <div>
+        <div class="title">
+          फ्रीडम फाइटर गंगाधर प्रसाद मेमोरियल ट्रस्ट
+        </div>
+        <div class="subtitle">(FFGPMT)</div>
+      </div>
+    </div>
 
-<!-- WEBSITES -->
-<div class="meta">
-🏠 Websites:
-<a href="https://ffgpmt.org/">FFGPMT</a> |
-<a href="https://acslearn.com/">ACS Learn</a> |
-<a href="https://acs-aidigitalmaster.org/">AI Master</a>
-</div>
-
-<!-- LANGUAGE -->
-<div class="meta">
-🌐 Language:
-<a href="/index.html">हिंदी</a> |
-<a href="/en/index.html">English</a> |
-<a href="/ar/index.html">العربية</a>
-</div>
-
-<!-- HERO -->
-<div class="hero">
-  <img src="hero.jpg" alt="hero">
-  <div class="hero-text">
-    हर बच्चे को डिजिटल सीखने का अवसर
+    <div class="lang">
+      🌐 Language:
+      <a href="/index.html">हिंदी</a>
+      <a href="/en/index.html">English</a>
+      <a href="/ar/index.html">العربية</a>
+    </div>
   </div>
-</div>
 
-<!-- CTA -->
-<a href="#" class="btn">🚀 अभी जुड़ें</a>
+  <!-- HERO -->
+  <div class="card">
+    <img src="hero.jpg" class="hero" />
+    <div class="hero-text">
+      हर बच्चे को डिजिटल सीखने का अवसर
+    </div>
 
-<!-- ABOUT -->
-<div class="card">
-  <h3>हम क्या करते हैं</h3>
-  <p>
-    हम बच्चों और युवाओं को मोबाइल के माध्यम से सीखने, बनाने और आगे बढ़ने की दिशा देते हैं।
-  </p>
-</div>
+    <a href="https://acslearn.com/" class="btn">
+      🚀 अभी सीखना शुरू करें
+    </a>
+  </div>
 
-<!-- TRUST DOCS -->
-<div class="card pdf">
-  <h3>📄 Trust & Documents</h3>
+  <!-- WHAT WE DO -->
+  <div class="card">
+    <div class="section-title">हम क्या करते हैं</div>
+    <p>
+      हम बच्चों और युवाओं को मोबाइल के माध्यम से सीखने,
+      बनाने और आगे बढ़ने की दिशा देते हैं।
+    </p>
+  </div>
 
-  <a href="darpan.pdf" target="_blank">
-    📑 NGO Darpan Certificate देखें
-  </a>
+  <!-- DOCUMENTS -->
+  <div class="card doc">
+    <div class="section-title">📄 Trust & Documents</div>
 
-  <a href="csr1.pdf" target="_blank">
-    📑 CSR Document देखें
-  </a>
-</div>
+    <a href="darpan.pdf" target="_blank">
+      📜 NGO Darpan Certificate देखें
+    </a>
 
-<!-- FOOTER -->
-<div class="footer">
-  © FFGPMT TRUST
-</div>
+    <a href="csr1.pdf" target="_blank">
+      📊 CSR Certificate देखें
+    </a>
+  </div>
 
 </body>
 </html>
