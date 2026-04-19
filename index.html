@@ -6,12 +6,26 @@
 <title>FFGPMT TRUST</title>
 
 <style>
+:root{
+  --bg:#f6f7fb;
+  --card:#ffffff;
+  --text:#111827;
+  --muted:#6b7280;
+  --green:#16A34A;
+  --blue:#2563EB;
+  --shadow:0 6px 16px rgba(0,0,0,0.08);
+}
+
+*{box-sizing:border-box}
+
 body{
+  margin:0;
   font-family:sans-serif;
+  background:var(--bg);
+  color:var(--text);
   max-width:430px;
   margin:auto;
   padding:10px;
-  background:#f9fafb;
 }
 
 /* HEADER */
@@ -19,111 +33,131 @@ body{
   display:flex;
   align-items:center;
   gap:10px;
+  margin-bottom:8px;
 }
 
 .header img{
-  width:50px;
+  width:44px;
 }
 
 .title{
-  font-weight:bold;
-  font-size:18px;
+  font-weight:700;
+  font-size:17px;
 }
 
 /* LINKS */
-.links{
-  text-align:center;
-  margin:8px 0;
+.meta{
+  font-size:13px;
+  color:var(--muted);
+  margin-bottom:6px;
 }
 
-.links a{
-  margin:0 5px;
+.meta a{
+  color:var(--blue);
   text-decoration:none;
-  color:#2563EB;
-  font-weight:bold;
+  font-weight:600;
+  margin:0 3px;
 }
 
 /* HERO */
 .hero{
   position:relative;
-  margin-top:10px;
+  margin-top:8px;
 }
 
 .hero img{
   width:100%;
-  border-radius:12px;
+  border-radius:14px;
+  display:block;
 }
 
 /* HERO TEXT */
 .hero-text{
   position:absolute;
-  bottom:20px;
-  left:15px;
-  right:15px;
-  color:white;
-  font-weight:bold;
+  left:12px;
+  right:12px;
+  bottom:14px;
+  color:#fff;
+  font-weight:700;
   font-size:18px;
-  background:rgba(0,0,0,0.4);
-  padding:10px;
-  border-radius:8px;
+  line-height:1.3;
+  background:rgba(0,0,0,0.45);
+  padding:10px 12px;
+  border-radius:10px;
 }
 
 /* BUTTON */
 .btn{
   display:block;
   text-align:center;
-  background:#16A34A;
-  color:white;
+  margin-top:10px;
   padding:14px;
+  background:var(--green);
+  color:#fff;
   border-radius:12px;
-  margin-top:10px;
-  font-weight:bold;
-  font-size:16px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+  font-weight:700;
   text-decoration:none;
+  box-shadow:var(--shadow);
 }
 
-/* BOX */
-.box{
-  background:white;
-  padding:12px;
-  border-radius:12px;
-  margin-top:10px;
-  box-shadow:0 2px 6px rgba(0,0,0,0.05);
+/* CARD */
+.card{
+  background:var(--card);
+  padding:14px;
+  border-radius:14px;
+  margin-top:12px;
+  box-shadow:var(--shadow);
 }
 
-/* PDF */
+.card h3{
+  margin:0 0 6px 0;
+  font-size:16px;
+}
+
+.card p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* PDF LINKS */
 .pdf a{
   display:block;
+  margin-top:8px;
   padding:10px;
   background:#eef2ff;
-  border-radius:8px;
-  margin-top:5px;
+  border-radius:10px;
   text-decoration:none;
-  color:black;
+  color:#111;
+  font-size:14px;
 }
 
 /* FOOTER */
 .footer{
   text-align:center;
-  margin-top:20px;
   font-size:12px;
-  color:#555;
+  color:var(--muted);
+  margin-top:18px;
+}
+
+/* RTL support (Arabic) */
+html[lang="ar"] body{
+  direction:rtl;
+  text-align:right;
 }
 </style>
-
 </head>
 
 <body>
 
 <!-- HEADER -->
 <div class="header">
-  <img src="logo.png">
+  <img src="logo.png" alt="logo">
   <div class="title">FFGPMT TRUST</div>
 </div>
 
-<!-- WEBSITE LINKS -->
-<div class="links">
+<!-- WEBSITES -->
+<div class="meta">
 🏠 Websites:
 <a href="https://ffgpmt.org/">FFGPMT</a> |
 <a href="https://acslearn.com/">ACS Learn</a> |
@@ -131,49 +165,48 @@ body{
 </div>
 
 <!-- LANGUAGE -->
-<div class="links">
+<div class="meta">
 🌐 Language:
-<a href="/index.html">हिंदी</a>
-<a href="/en/index.html">English</a>
+<a href="/index.html">हिंदी</a> |
+<a href="/en/index.html">English</a> |
 <a href="/ar/index.html">العربية</a>
 </div>
 
 <!-- HERO -->
 <div class="hero">
-  <img src="hero.jpg">
+  <img src="hero.jpg" alt="hero">
   <div class="hero-text">
     हर बच्चे को डिजिटल सीखने का अवसर
   </div>
 </div>
 
-<!-- BUTTON -->
+<!-- CTA -->
 <a href="#" class="btn">🚀 अभी जुड़ें</a>
 
 <!-- ABOUT -->
-<div class="box">
-<h3>हम क्या करते हैं</h3>
-<p>
-हम बच्चों और युवाओं को मोबाइल के माध्यम से सीखने, बनाने और आगे बढ़ने की दिशा देते हैं।
-</p>
+<div class="card">
+  <h3>हम क्या करते हैं</h3>
+  <p>
+    हम बच्चों और युवाओं को मोबाइल के माध्यम से सीखने, बनाने और आगे बढ़ने की दिशा देते हैं।
+  </p>
 </div>
 
-<!-- TRUST -->
-<div class="box pdf">
-<h3>📄 Trust & Documents</h3>
+<!-- TRUST DOCS -->
+<div class="card pdf">
+  <h3>📄 Trust & Documents</h3>
 
-<a href="darpan.pdf" target="_blank">
-📑 NGO Darpan Certificate देखें
-</a>
+  <a href="darpan.pdf" target="_blank">
+    📑 NGO Darpan Certificate देखें
+  </a>
 
-<a href="csr1.pdf" target="_blank">
-📑 CSR Document देखें
-</a>
-
+  <a href="csr1.pdf" target="_blank">
+    📑 CSR Document देखें
+  </a>
 </div>
 
 <!-- FOOTER -->
 <div class="footer">
-© FFGPMT TRUST
+  © FFGPMT TRUST
 </div>
 
 </body>
