@@ -1,383 +1,60 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FFGPMT Trust</title>
-  <meta name="description" content="Freedom Fighter Gangadhar Prasad Memorial Trust - Digital skills, education, and empowerment for underserved children and youth in the Global South." />
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FFGPMT - Multilingual Front</title>
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #f6f8fb;
-      color: #111827;
-      line-height: 1.5;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    .page {
-      max-width: 430px;
-      margin: 0 auto;
-      background: #ffffff;
-      min-height: 100vh;
-      box-shadow: 0 0 18px rgba(0,0,0,0.08);
-    }
-
-    .topbar {
-      background: linear-gradient(to right, #ff9933, #ffffff, #138808);
-      color: #111;
-      text-align: center;
-      padding: 10px 12px;
-      font-weight: bold;
-      font-size: 14px;
-    }
-
-    .hero {
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero img {
-      width: 100%;
-      height: auto;
-    }
-
-    .hero-overlay {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      padding: 18px 16px;
-      background: linear-gradient(to top, rgba(0,0,0,0.72), rgba(0,0,0,0.12));
-      color: #fff;
-    }
-
-    .tag {
-      display: inline-block;
-      background: rgba(255,255,255,0.16);
-      border: 1px solid rgba(255,255,255,0.28);
-      padding: 5px 10px;
-      border-radius: 999px;
-      font-size: 12px;
-      margin-bottom: 10px;
-    }
-
-    .hero h1 {
-      font-size: 27px;
-      line-height: 1.2;
-      margin-bottom: 10px;
-      font-weight: 800;
-    }
-
-    .hero p {
-      font-size: 15px;
-      color: #f3f4f6;
-    }
-
-    .cta-wrap {
-      padding: 14px 16px 4px;
-      background: #fff;
-    }
-
-    .btn {
-      display: block;
-      width: 100%;
-      border: none;
-      border-radius: 14px;
-      padding: 14px 16px;
-      font-size: 17px;
-      font-weight: bold;
-      text-align: center;
-      margin-bottom: 12px;
-      cursor: pointer;
-    }
-
-    .btn-primary {
-      background: #16a34a;
-      color: #fff;
-    }
-
-    .btn-secondary {
-      background: #1d4ed8;
-      color: #fff;
-    }
-
-    .section {
-      padding: 22px 16px;
-      border-top: 1px solid #eef2f7;
-    }
-
-    .section h2 {
-      font-size: 22px;
-      margin-bottom: 10px;
-      color: #0f172a;
-    }
-
-    .section p {
-      font-size: 15px;
-      color: #374151;
-    }
-
-    .mini-highlight {
-      margin-top: 12px;
-      background: #f0fdf4;
-      border-left: 4px solid #16a34a;
-      padding: 12px;
-      border-radius: 10px;
-      font-size: 15px;
-      color: #14532d;
-      font-weight: bold;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin-top: 14px;
-    }
-
-    .card {
-      background: #f8fafc;
-      border: 1px solid #e5e7eb;
-      border-radius: 16px;
-      padding: 14px;
-    }
-
-    .card h3 {
-      font-size: 16px;
-      margin-bottom: 8px;
-      color: #111827;
-    }
-
-    .card p {
-      font-size: 14px;
-      color: #4b5563;
-    }
-
-    .impact-box {
-      background: linear-gradient(135deg, #0f172a, #1e293b);
-      color: white;
-      border-radius: 18px;
-      padding: 16px;
-      margin-top: 14px;
-    }
-
-    .impact-box h3 {
-      font-size: 18px;
-      margin-bottom: 8px;
-    }
-
-    .impact-line {
-      font-size: 14px;
-      margin: 6px 0;
-      color: #e5e7eb;
-    }
-
-    .proof-list {
-      margin-top: 10px;
-    }
-
-    .proof-item {
-      background: #f8fafc;
-      border: 1px solid #e5e7eb;
-      padding: 12px;
-      border-radius: 12px;
-      margin-bottom: 10px;
-      font-size: 14px;
-      color: #1f2937;
-    }
-
-    .doc-links a {
-      display: block;
-      background: #fff7ed;
-      color: #9a3412;
-      border: 1px solid #fdba74;
-      padding: 12px;
-      border-radius: 12px;
-      margin-bottom: 10px;
-      font-weight: bold;
-      font-size: 14px;
-    }
-
-    .contact-box {
-      background: #eff6ff;
-      border: 1px solid #bfdbfe;
-      border-radius: 16px;
-      padding: 14px;
-      margin-top: 12px;
-    }
-
-    .contact-box p {
-      font-size: 14px;
-      margin-bottom: 6px;
-      color: #1e3a8a;
-    }
-
-    .footer {
-      text-align: center;
-      padding: 20px 16px 28px;
-      font-size: 13px;
-      color: #6b7280;
-    }
-  </style>
+<style>
+body{
+  font-family:sans-serif;
+  max-width:430px;
+  margin:auto;
+  padding:10px;
+}
+.lang-bar{
+  text-align:center;
+  margin-bottom:15px;
+}
+.lang-bar a{
+  margin:5px;
+  padding:6px 10px;
+  border:1px solid #ccc;
+  text-decoration:none;
+  color:#000;
+  border-radius:6px;
+}
+.box{
+  border:1px solid #ddd;
+  padding:10px;
+  margin:10px 0;
+}
+</style>
 </head>
+
 <body>
-  <div class="page">
 
-    <div class="topbar">
-      ESTD: 15/08/2019 • REGISTERED TRUST
-    </div>
+<div class="lang-bar">
+🌐 Language:
+<a href="index.html">हिंदी</a>
+<a href="en/index.html">English</a>
+<a href="ar/index.html">العربية</a>
+</div>
 
-    <section class="hero">
-      <!-- इस image file को same folder में hero.jpg नाम से upload करना -->
-      <img src="hero.jpg" alt="A child reaching for support and opportunity" />
-      <div class="hero-overlay">
-        <div class="tag">FFGPMT TRUST</div>
-        <h1>हर बच्चे को डिजिटल कमाई का अवसर</h1>
-        <p>
-          हम ग्लोबल साउथ के वंचित बच्चों और युवाओं को
-          मोबाइल से सीखने, बनाने और कमाने की digital skills सिखाते हैं।
-        </p>
-      </div>
-    </section>
+<div class="box">
+<h2>🏫 FFGPMT</h2>
+<p>यह वेबसाइट शिक्षा और सामाजिक विकास के लिए समर्पित है।</p>
+</div>
 
-    <div class="cta-wrap">
-      <a href="https://forms.gle/9D6H4PFxB4G8kj7TA" target="_blank">
-        <div class="btn btn-primary">Join करें</div>
-      </a>
-      <a href="https://acslearn.com" target="_blank">
-        <div class="btn btn-secondary">Course देखें</div>
-      </a>
-    </div>
+<div class="box">
+<h2>🌍 English</h2>
+<p>This website is dedicated to education and social development.</p>
+</div>
 
-    <section class="section">
-      <h2>हम क्या करते हैं</h2>
-      <p>
-        हम mobile-first digital skills training देते हैं, ताकि कम संसाधन वाले बच्चे
-        और युवा सिर्फ मोबाइल के सहारे सीख सकें, project बना सकें, और income earning की दिशा में बढ़ सकें।
-      </p>
-      <div class="mini-highlight">
-        वसुधैव कुटुम्बकम् — पूरी दुनिया एक परिवार है।
-      </div>
-    </section>
+<div class="box">
+<h2>🌍 العربية</h2>
+<p>هذا الموقع مخصص للتعليم والتنمية الاجتماعية.</p>
+</div>
 
-    <section class="section">
-      <h2>हम किनके लिए काम करते हैं</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>वंचित बच्चे</h3>
-          <p>जिनके पास laptop, coaching या बड़े संसाधन नहीं हैं।</p>
-        </div>
-        <div class="card">
-          <h3>ग्लोबल साउथ</h3>
-          <p>ऐसे समुदाय जहाँ skill और opportunity की कमी है।</p>
-        </div>
-        <div class="card">
-          <h3>युवा</h3>
-          <p>जो मोबाइल के सहारे earning-ready बनना चाहते हैं।</p>
-        </div>
-        <div class="card">
-          <h3>परिवार</h3>
-          <p>जो शिक्षा को रोज़गार और आत्मनिर्भरता से जोड़ना चाहते हैं।</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>हमारे कार्यक्षेत्र</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Digital Skills</h3>
-          <p>मोबाइल से सीखना, बनाना, प्रकाशित करना और आगे बढ़ना।</p>
-        </div>
-        <div class="card">
-          <h3>Education</h3>
-          <p>बच्चों और युवाओं को practical learning देना।</p>
-        </div>
-        <div class="card">
-          <h3>Women Empowerment</h3>
-          <p>महिलाओं को skill और earning pathways से जोड़ना।</p>
-        </div>
-        <div class="card">
-          <h3>Livelihood</h3>
-          <p>सीखने को income और self-reliance से जोड़ना।</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>हम क्यों करते हैं</h2>
-      <p>
-        हमारा विश्वास है कि दुनिया में समरसता तभी आएगी जब अवसर बराबर होंगे।
-        skill, dignity और earning power के बिना equality अधूरी रहती है।
-      </p>
-
-      <div class="impact-box">
-        <h3>हमारा लक्ष्य</h3>
-        <div class="impact-line">• Mobile-first learning system</div>
-        <div class="impact-line">• 80+ languages में विस्तार</div>
-        <div class="impact-line">• Global South के बच्चों तक पहुँच</div>
-        <div class="impact-line">• Skill → Work → Self-reliance model</div>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Trust & Proof</h2>
-      <div class="proof-list">
-        <div class="proof-item">PAN Verified Trust</div>
-        <div class="proof-item">12AB Registered</div>
-        <div class="proof-item">80G Approved</div>
-        <div class="proof-item">CSR Registered</div>
-        <div class="proof-item">NITI Aayog / NGO Darpan Verified</div>
-        <div class="proof-item">ITR-7 Filed & Audited</div>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Documents</h2>
-      <div class="doc-links">
-        <a href="#" target="_blank">Trust Registration Deed</a>
-        <a href="#" target="_blank">PAN Card</a>
-        <a href="#" target="_blank">12AB Certificate</a>
-        <a href="#" target="_blank">80G Certificate</a>
-        <a href="#" target="_blank">CSR Registration</a>
-        <a href="#" target="_blank">Audit Report / ITR</a>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Contact</h2>
-      <div class="contact-box">
-        <p><strong>Trust:</strong> Freedom Fighter Gangadhar Prasad Memorial Trust</p>
-        <p><strong>Email:</strong> acs.babita111@gmail.com</p>
-        <p><strong>Mobile:</strong> 9431061111 / 9431210092</p>
-        <p><strong>Location:</strong> Khagaria, Bihar, India</p>
-      </div>
-    </section>
-
-    <div class="cta-wrap" style="padding-top: 0;">
-      <a href="https://forms.gle/9D6H4PFxB4G8kj7TA" target="_blank">
-        <div class="btn btn-primary">अभी जुड़ें</div>
-      </a>
-    </div>
-
-    <div class="footer">
-      © FFGPMT TRUST • Mobile-First • Global South Focused
-    </div>
-
-  </div>
 </body>
 </html>
