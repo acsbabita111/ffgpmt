@@ -1,207 +1,197 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
-  <title>FFGPMT | फ्रीडम फाइटर गंगाधर प्रसाद मेमोरियल ट्रस्ट</title>
+<title>FFGPMT</title>
 
-  <!-- Language SEO (13 Languages) -->
-  <link rel="alternate" hreflang="hi" href="https://ffgpmt.org/index.html">
-  <link rel="alternate" hreflang="en" href="https://ffgpmt.org/en/index.html">
-  <link rel="alternate" hreflang="ar" href="https://ffgpmt.org/ar/index.html">
-  <link rel="alternate" hreflang="bn" href="https://ffgpmt.org/bn/index.html">
-  <link rel="alternate" hreflang="fr" href="https://ffgpmt.org/fr/index.html">
-  <link rel="alternate" hreflang="de" href="https://ffgpmt.org/de/index.html">
-  <link rel="alternate" hreflang="id" href="https://ffgpmt.org/id/index.html">
-  <link rel="alternate" hreflang="ja" href="https://ffgpmt.org/ja/index.html">
-  <link rel="alternate" hreflang="zh" href="https://ffgpmt.org/zh/index.html">
-  <link rel="alternate" hreflang="pt" href="https://ffgpmt.org/pt/index.html">
-  <link rel="alternate" hreflang="ru" href="https://ffgpmt.org/ru/index.html">
-  <link rel="alternate" hreflang="es" href="https://ffgpmt.org/es/index.html">
-  <link rel="alternate" hreflang="ur" href="https://ffgpmt.org/ur/index.html">
-  <link rel="alternate" hreflang="x-default" href="https://ffgpmt.org/index.html">
+<!-- SEO LANG -->
+<link rel="alternate" hreflang="hi" href="https://ffgpmt.org/index.html">
+<link rel="alternate" hreflang="en" href="https://ffgpmt.org/en/index.html">
+<link rel="alternate" hreflang="ar" href="https://ffgpmt.org/ar/index.html">
 
-  <style>
-    body {
-      font-family: system-ui, -apple-system, sans-serif;
-      max-width: 430px;
-      margin: auto;
-      padding: 12px;
-      background: #f8fafc;
-      color: #111827;
-    }
+<style>
+body {
+  font-family: system-ui;
+  max-width: 430px;
+  margin: auto;
+  padding: 12px;
+  background: #f8fafc;
+}
 
-    .card {
-      background: white;
-      border-radius: 14px;
-      padding: 14px;
-      margin-bottom: 14px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
 
-    /* 🇮🇳 TRI-COLOR HEADER */
-    .header-card {
-      background: linear-gradient(to bottom, #ff9933, #ffffff, #138808);
-      border-radius: 14px;
-      padding: 14px;
-      margin-bottom: 14px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    }
+/* 🇮🇳 HEADER */
+.header-card {
+  background: linear-gradient(to bottom, #ff9933, #ffffff, #138808);
+  border-radius: 16px;
+  padding: 16px;
+}
 
-    .header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-    .logo {
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background: white;
-      padding: 4px;
-    }
+.logo {
+  width: 56px;
+  border-radius: 50%;
+  background: white;
+  padding: 4px;
+}
 
-    .title {
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 1.3;
-      color: #0f172a;
-    }
+.title {
+  font-weight: 700;
+  font-size: 16px;
+}
 
-    .subtitle {
-      font-size: 12px;
-      color: #374151;
-    }
+.subtitle {
+  font-size: 13px;
+}
 
-    .lang {
-      text-align: center;
-      font-size: 13px;
-      margin-top: 8px;
-      line-height: 1.6;
-    }
+.lang {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 10px;
+  line-height: 1.7;
+}
 
-    .lang a {
-      text-decoration: none;
-      color: #1d4ed8;
-      font-weight: 500;
-      margin: 2px;
-      display: inline-block;
-    }
+.lang a {
+  text-decoration: none;
+  color: #1d4ed8;
+  font-weight: 600;
+  margin: 3px;
+}
 
-    .hero {
-      width: 100%;
-      border-radius: 12px;
-    }
+/* HERO */
+.hero {
+  width: 100%;
+  border-radius: 14px;
+}
 
-    .hero-text {
-      margin-top: -60px;
-      text-align: center;
-      color: white;
-      font-weight: bold;
-      font-size: 16px;
-      background: rgba(0,0,0,0.35);
-      padding: 8px;
-      border-radius: 8px;
-    }
+.hero-text {
+  margin-top: -70px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  background: rgba(0,0,0,0.55);
+  padding: 10px;
+  border-radius: 10px;
+}
 
-    .btn {
-      display: block;
-      text-align: center;
-      background: #16a34a;
-      color: white;
-      padding: 14px;
-      border-radius: 10px;
-      font-size: 16px;
-      text-decoration: none;
-      margin-top: 14px;
-      font-weight: bold;
-    }
+/* BUTTON */
+.btn {
+  display: block;
+  text-align: center;
+  background: #16a34a;
+  color: white;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 16px;
+  font-weight: bold;
+}
 
-    .section-title {
-      font-weight: bold;
-      margin-bottom: 6px;
-    }
-
-    .doc a {
-      display: block;
-      padding: 10px;
-      background: #eef2ff;
-      border-radius: 8px;
-      margin-top: 6px;
-      text-decoration: none;
-      color: #1e3a8a;
-    }
-  </style>
+/* DOC */
+.doc a {
+  display: block;
+  padding: 10px;
+  background: #eef2ff;
+  border-radius: 8px;
+  margin-top: 6px;
+  text-decoration: none;
+  color: #1e3a8a;
+}
+</style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <div class="header-card">
-    <div class="header">
-      <img src="logo.png" class="logo" />
-      <div>
-        <div class="title">
-          फ्रीडम फाइटर गंगाधर प्रसाद मेमोरियल ट्रस्ट
-        </div>
-        <div class="subtitle">(FFGPMT)</div>
-      </div>
+<!-- 🧠 =========================
+     👉 सिर्फ यही section बदलना है
+========================= -->
+<script>
+const DATA = {
+  title: "फ्रीडम फाइटर गंगाधर प्रसाद मेमोरियल ट्रस्ट",
+  short: "(FFGPMT)",
+
+  heroText: "हर बच्चे को डिजिटल सीखने का अवसर",
+
+  button: "🚀 अभी सीखना शुरू करें",
+
+  aboutTitle: "हम क्या करते हैं",
+
+  aboutText: "हम बच्चों और युवाओं को मोबाइल के माध्यम से सीखने, बनाने और आगे बढ़ने की दिशा देते हैं।",
+
+  docTitle: "📄 ट्रस्ट डॉक्यूमेंट",
+
+  doc1: "📜 NGO Darpan Certificate देखें",
+  doc2: "📊 CSR Certificate देखें"
+};
+</script>
+
+<!-- HEADER -->
+<div class="header-card">
+  <div class="header">
+    <img src="logo.png" class="logo">
+    <div>
+      <div class="title" id="title"></div>
+      <div class="subtitle" id="short"></div>
     </div>
-
-    <!-- 🌐 13 LANGUAGE SWITCH -->
-    <div class="lang">
-      🌐 Language:
-      <a href="/index.html">हिंदी</a>
-      <a href="/en/index.html">English</a>
-      <a href="/ar/index.html">العربية</a>
-      <a href="/bn/index.html">বাংলা</a>
-      <a href="/fr/index.html">Français</a>
-      <a href="/de/index.html">Deutsch</a>
-      <a href="/id/index.html">Bahasa</a>
-      <a href="/ja/index.html">日本語</a>
-      <a href="/zh/index.html">中文</a>
-      <a href="/pt/index.html">Português</a>
-      <a href="/ru/index.html">Русский</a>
-      <a href="/es/index.html">Español</a>
-      <a href="/ur/index.html">اردو</a>
-    </div>
   </div>
 
-  <!-- HERO -->
-  <div class="card">
-    <img src="hero.jpg" class="hero" />
-    <div class="hero-text">
-      हर बच्चे को डिजिटल सीखने का अवसर
-    </div>
-
-    <a href="https://acslearn.com/" class="btn">
-      🚀 अभी सीखना शुरू करें
-    </a>
+  <div class="lang">
+    🌐 Language:
+    <a href="/index.html">हिंदी</a>
+    <a href="/en/index.html">English</a>
+    <a href="/ar/index.html">العربية</a>
   </div>
+</div>
 
-  <!-- WHAT WE DO -->
-  <div class="card">
-    <div class="section-title">हम क्या करते हैं</div>
-    <p>
-      हम बच्चों और युवाओं को मोबाइल के माध्यम से सीखने,
-      बनाने और आगे बढ़ने की दिशा देते हैं।
-    </p>
-  </div>
+<!-- HERO -->
+<div class="card">
+  <img src="hero.jpg" class="hero">
+  <div class="hero-text" id="heroText"></div>
 
-  <!-- DOCUMENTS -->
-  <div class="card doc">
-    <div class="section-title">📄 ट्रस्ट दस्तावेज़</div>
+  <a href="https://acslearn.com/" class="btn" id="btn"></a>
+</div>
 
-    <a href="darpan.pdf" target="_blank">
-      📜 NGO Darpan Certificate देखें
-    </a>
+<!-- ABOUT -->
+<div class="card">
+  <div style="font-weight:bold" id="aboutTitle"></div>
+  <p id="aboutText"></p>
+</div>
 
-    <a href="csr1.pdf" target="_blank">
-      📊 CSR Certificate देखें
-    </a>
-  </div>
+<!-- DOC -->
+<div class="card doc">
+  <div style="font-weight:bold" id="docTitle"></div>
+
+  <a href="darpan.pdf" target="_blank" id="doc1"></a>
+  <a href="csr1.pdf" target="_blank" id="doc2"></a>
+</div>
+
+<!-- ⚙️ AUTO FILL SYSTEM -->
+<script>
+document.getElementById("title").innerText = DATA.title;
+document.getElementById("short").innerText = DATA.short;
+document.getElementById("heroText").innerText = DATA.heroText;
+document.getElementById("btn").innerText = DATA.button;
+document.getElementById("aboutTitle").innerText = DATA.aboutTitle;
+document.getElementById("aboutText").innerText = DATA.aboutText;
+document.getElementById("docTitle").innerText = DATA.docTitle;
+document.getElementById("doc1").innerText = DATA.doc1;
+document.getElementById("doc2").innerText = DATA.doc2;
+</script>
 
 </body>
 </html>
