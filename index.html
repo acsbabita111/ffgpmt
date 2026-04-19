@@ -3,194 +3,195 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-
 <title>FFGPMT</title>
 
-<!-- SEO LANG -->
+<!-- SEO hreflang (13) -->
 <link rel="alternate" hreflang="hi" href="https://ffgpmt.org/index.html">
 <link rel="alternate" hreflang="en" href="https://ffgpmt.org/en/index.html">
 <link rel="alternate" hreflang="ar" href="https://ffgpmt.org/ar/index.html">
+<link rel="alternate" hreflang="bn" href="https://ffgpmt.org/bn/index.html">
+<link rel="alternate" hreflang="fr" href="https://ffgpmt.org/fr/index.html">
+<link rel="alternate" hreflang="de" href="https://ffgpmt.org/de/index.html">
+<link rel="alternate" hreflang="id" href="https://ffgpmt.org/id/index.html">
+<link rel="alternate" hreflang="ja" href="https://ffgpmt.org/ja/index.html">
+<link rel="alternate" hreflang="zh" href="https://ffgpmt.org/zh/index.html">
+<link rel="alternate" hreflang="pt" href="https://ffgpmt.org/pt/index.html">
+<link rel="alternate" hreflang="ru" href="https://ffgpmt.org/ru/index.html">
+<link rel="alternate" hreflang="es" href="https://ffgpmt.org/es/index.html">
+<link rel="alternate" hreflang="ur" href="https://ffgpmt.org/ur/index.html">
+<link rel="alternate" hreflang="x-default" href="https://ffgpmt.org/index.html">
 
 <style>
-body {
-  font-family: system-ui;
-  max-width: 430px;
-  margin: auto;
-  padding: 12px;
-  background: #f8fafc;
+body{
+  font-family:system-ui,-apple-system,sans-serif;
+  max-width:430px;
+  margin:auto;
+  padding:12px;
+  background:#f8fafc;
+  color:#0f172a;
+}
+.card{
+  background:#fff;
+  border-radius:14px;
+  padding:14px;
+  margin-bottom:14px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.06);
 }
 
-.card {
-  background: white;
-  border-radius: 14px;
-  padding: 14px;
-  margin-bottom: 14px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+/* 🇮🇳 Header */
+.header-card{
+  background:linear-gradient(to bottom,#ff9933,#ffffff,#138808);
+  border-radius:16px;
+  padding:16px;
+  box-shadow:0 6px 14px rgba(0,0,0,0.08);
+}
+.header{display:flex;gap:10px;align-items:center;}
+.logo{width:56px;border-radius:50%;background:#fff;padding:4px;}
+.title{font-weight:700;font-size:15px;line-height:1.3;}
+.subtitle{font-size:13px;color:#374151;}
+
+/* 🌐 Languages */
+.lang{
+  text-align:center;
+  font-size:13px;
+  margin-top:10px;
+  line-height:1.8;
+}
+.lang a{
+  text-decoration:none;
+  color:#1d4ed8;
+  font-weight:600;
+  margin:2px 4px;
 }
 
-/* 🇮🇳 HEADER */
-.header-card {
-  background: linear-gradient(to bottom, #ff9933, #ffffff, #138808);
-  border-radius: 16px;
-  padding: 16px;
+/* 🖼 Hero */
+.hero-box{position:relative;}
+.hero{width:100%;border-radius:14px;display:block;}
+.hero-text{
+  position:absolute;
+  bottom:70px;
+  left:10px;
+  right:10px;
+  text-align:center;
+  color:#fff;
+  font-weight:700;
+  font-size:15px;
+  background:rgba(0,0,0,0.55);
+  padding:8px;
+  border-radius:8px;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+/* 🔘 Button */
+.btn{
+  display:block;
+  text-align:center;
+  background:#16a34a;
+  color:#fff;
+  padding:14px;
+  border-radius:12px;
+  font-size:16px;
+  text-decoration:none;
+  margin-top:14px;
+  font-weight:700;
+  box-shadow:0 6px 14px rgba(22,163,74,0.4);
 }
 
-.logo {
-  width: 56px;
-  border-radius: 50%;
-  background: white;
-  padding: 4px;
-}
-
-.title {
-  font-weight: 700;
-  font-size: 16px;
-}
-
-.subtitle {
-  font-size: 13px;
-}
-
-.lang {
-  text-align: center;
-  font-size: 13px;
-  margin-top: 10px;
-  line-height: 1.7;
-}
-
-.lang a {
-  text-decoration: none;
-  color: #1d4ed8;
-  font-weight: 600;
-  margin: 3px;
-}
-
-/* HERO */
-.hero {
-  width: 100%;
-  border-radius: 14px;
-}
-
-.hero-text {
-  margin-top: -70px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 16px;
-  color: white;
-  background: rgba(0,0,0,0.55);
-  padding: 10px;
-  border-radius: 10px;
-}
-
-/* BUTTON */
-.btn {
-  display: block;
-  text-align: center;
-  background: #16a34a;
-  color: white;
-  padding: 14px;
-  border-radius: 12px;
-  font-size: 16px;
-  text-decoration: none;
-  margin-top: 16px;
-  font-weight: bold;
-}
-
-/* DOC */
-.doc a {
-  display: block;
-  padding: 10px;
-  background: #eef2ff;
-  border-radius: 8px;
-  margin-top: 6px;
-  text-decoration: none;
-  color: #1e3a8a;
+/* 📄 Docs */
+.doc a{
+  display:block;
+  padding:10px;
+  background:#eef2ff;
+  border-radius:8px;
+  margin-top:6px;
+  text-decoration:none;
+  color:#1e3a8a;
 }
 </style>
 </head>
 
 <body>
 
-<!-- 🧠 =========================
-     👉 सिर्फ यही section बदलना है
-========================= -->
+<!-- 🔑 SINGLE SOURCE DATA (सिर्फ यही बदलना है) -->
 <script>
 const DATA = {
-  title: "फ्रीडम फाइटर गंगाधर प्रसाद मेमोरियल ट्रस्ट",
+  titleLine1: "फ्रीडम फाइटर गंगाधर प्रसाद",
+  titleLine2: "मेमोरियल ट्रस्ट",
   short: "(FFGPMT)",
-
-  heroText: "हर बच्चे को डिजिटल सीखने का अवसर",
-
-  button: "🚀 अभी सीखना शुरू करें",
-
+  hero: "हर बच्चे को डिजिटल सीखने का अवसर",
+  btn: "🚀 अभी सीखना शुरू करें",
   aboutTitle: "हम क्या करते हैं",
-
-  aboutText: "हम बच्चों और युवाओं को मोबाइल के माध्यम से सीखने, बनाने और आगे बढ़ने की दिशा देते हैं।",
-
-  docTitle: "📄 ट्रस्ट डॉक्यूमेंट",
-
-  doc1: "📜 NGO Darpan Certificate देखें",
-  doc2: "📊 CSR Certificate देखें"
+  about: "हम बच्चों और युवाओं को मोबाइल के माध्यम से सीखने, बनाने और आगे बढ़ने की दिशा देते हैं।",
+  doc: "📄 ट्रस्ट डॉक्यूमेंट",
+  d1: "📜 NGO Darpan Certificate देखें",
+  d2: "📊 CSR Certificate देखें"
 };
 </script>
 
 <!-- HEADER -->
 <div class="header-card">
   <div class="header">
-    <img src="logo.png" class="logo">
+    <img src="logo.png" class="logo" alt="FFGPMT Logo">
     <div>
-      <div class="title" id="title"></div>
-      <div class="subtitle" id="short"></div>
+      <div class="title">
+        <span id="t1"></span><br>
+        <span id="t2"></span>
+      </div>
+      <div class="subtitle" id="s"></div>
     </div>
   </div>
 
+  <!-- 13 languages (2 lines, clean) -->
   <div class="lang">
-    🌐 Language:
-    <a href="/index.html">हिंदी</a>
-    <a href="/en/index.html">English</a>
-    <a href="/ar/index.html">العربية</a>
+    🌐 Language:<br>
+    <a href="/index.html">हिंदी</a> |
+    <a href="/en/index.html">English</a> |
+    <a href="/ar/index.html">العربية</a> |
+    <a href="/bn/index.html">বাংলা</a> |
+    <a href="/fr/index.html">Français</a> |
+    <a href="/de/index.html">Deutsch</a> |
+    <br>
+    <a href="/id/index.html">Bahasa</a> |
+    <a href="/ja/index.html">日本語</a> |
+    <a href="/zh/index.html">中文</a> |
+    <a href="/pt/index.html">Português</a> |
+    <a href="/ru/index.html">Русский</a> |
+    <a href="/es/index.html">Español</a> |
+    <a href="/ur/index.html">اردو</a>
   </div>
 </div>
 
 <!-- HERO -->
-<div class="card">
-  <img src="hero.jpg" class="hero">
-  <div class="hero-text" id="heroText"></div>
-
-  <a href="https://acslearn.com/" class="btn" id="btn"></a>
+<div class="card hero-box">
+  <img src="hero.jpg" class="hero" alt="Hero">
+  <div class="hero-text" id="h"></div>
+  <a href="https://acslearn.com/" class="btn" id="b"></a>
 </div>
 
 <!-- ABOUT -->
 <div class="card">
-  <div style="font-weight:bold" id="aboutTitle"></div>
-  <p id="aboutText"></p>
+  <b id="at"></b>
+  <p id="a"></p>
 </div>
 
-<!-- DOC -->
+<!-- DOCS -->
 <div class="card doc">
-  <div style="font-weight:bold" id="docTitle"></div>
-
-  <a href="darpan.pdf" target="_blank" id="doc1"></a>
-  <a href="csr1.pdf" target="_blank" id="doc2"></a>
+  <b id="dt"></b>
+  <a href="darpan.pdf" target="_blank" id="d1"></a>
+  <a href="csr1.pdf" target="_blank" id="d2"></a>
 </div>
 
-<!-- ⚙️ AUTO FILL SYSTEM -->
+<!-- AUTO FILL -->
 <script>
-document.getElementById("title").innerText = DATA.title;
-document.getElementById("short").innerText = DATA.short;
-document.getElementById("heroText").innerText = DATA.heroText;
-document.getElementById("btn").innerText = DATA.button;
-document.getElementById("aboutTitle").innerText = DATA.aboutTitle;
-document.getElementById("aboutText").innerText = DATA.aboutText;
-document.getElementById("docTitle").innerText = DATA.docTitle;
-document.getElementById("doc1").innerText = DATA.doc1;
-document.getElementById("doc2").innerText = DATA.doc2;
+t1.innerText = DATA.titleLine1;
+t2.innerText = DATA.titleLine2;
+s.innerText  = DATA.short;
+h.innerText  = DATA.hero;
+b.innerText  = DATA.btn;
+at.innerText = DATA.aboutTitle;
+a.innerText  = DATA.about;
+dt.innerText = DATA.doc;
+d1.innerText = DATA.d1;
+d2.innerText = DATA.d2;
 </script>
 
 </body>
