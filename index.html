@@ -3,83 +3,145 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FFGPMT - Multilingual Front</title>
-<link rel="alternate" hreflang="hi" href="https://ffgpmt.org/index.html">
-<link rel="alternate" hreflang="en" href="https://ffgpmt.org/en/index.html">
-<link rel="alternate" hreflang="ar" href="https://ffgpmt.org/ar/index.html">
-<link rel="alternate" hreflang="x-default" href="https://ffgpmt.org/index.html">
+<title>FFGPMT TRUST</title>
+
 <style>
 body{
   font-family:sans-serif;
   max-width:430px;
   margin:auto;
   padding:10px;
+  background:#f9fafb;
 }
-.lang-bar{
+
+/* HEADER */
+.header{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:10px;
+}
+
+.header img{
+  width:50px;
+}
+
+.title{
+  font-weight:bold;
+  font-size:18px;
+}
+
+/* HERO */
+.hero img{
+  width:100%;
+  border-radius:12px;
+}
+
+/* BUTTON */
+.btn{
+  display:block;
   text-align:center;
-  margin-bottom:15px;
-}
-.lang-bar a{
-  margin:5px;
-  padding:6px 10px;
-  border:1px solid #ccc;
+  background:#16A34A;
+  color:white;
+  padding:12px;
+  border-radius:10px;
+  margin-top:10px;
   text-decoration:none;
-  color:#000;
-  border-radius:6px;
+  font-weight:bold;
 }
+
+/* SECTION */
 .box{
-  border:1px solid #ddd;
+  background:white;
+  padding:12px;
+  border-radius:12px;
+  margin-top:10px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* LINKS */
+.links{
+  text-align:center;
+  margin-top:10px;
+}
+
+.links a{
+  margin:0 5px;
+  text-decoration:none;
+  color:#2563EB;
+}
+
+/* PDF */
+.pdf a{
+  display:block;
   padding:10px;
-  margin:10px 0;
+  background:#eef2ff;
+  border-radius:8px;
+  margin-top:5px;
+  text-decoration:none;
+  color:black;
 }
 </style>
+
 </head>
 
 <body>
-  <div style="background:#f3f4f6;padding:15px;border-radius:12px;margin-bottom:15px;">
 
-<h2 style="margin:0;">🏫 FFGPMT TRUST</h2>
-
-<p style="font-size:18px;font-weight:bold;">
-हर बच्चे को डिजिटल सीखने का अवसर
-</p>
-
-<p>
-हम बच्चों और युवाओं को मोबाइल के माध्यम से सीखने, बनाने और आगे बढ़ने की दिशा देते हैं।
-</p>
-
-<a href="#" style="display:block;text-align:center;background:#16A34A;color:white;padding:10px;border-radius:8px;margin-top:10px;text-decoration:none;">
-Join करें
-</a>
-
+<!-- HEADER -->
+<div class="header">
+  <img src="logo.png">
+  <div class="title">FFGPMT TRUST</div>
 </div>
-<div style="text-align:center;margin-bottom:10px;">
+
+<!-- WEBSITE SWITCH -->
+<div class="links">
 🏠 Websites:
 <a href="https://ffgpmt.org/">FFGPMT</a> |
 <a href="https://acslearn.com/">ACS Learn</a> |
-<a href="https://acs-aidigitalmaster.org/">AI Digital Master</a>
+<a href="https://acs-aidigitalmaster.org/">AI Master</a>
 </div>
-  
-<div style="text-align:center;margin-bottom:15px;">
+
+<!-- LANGUAGE -->
+<div class="links">
 🌐 Language:
 <a href="/index.html">हिंदी</a>
 <a href="/en/index.html">English</a>
 <a href="/ar/index.html">العربية</a>
 </div>
 
-<div class="box">
-<h2>🏫 फ्रीडम फाइटर गंगाधर प्रसाद मेमोरियल ट्रस्ट (FFGPMT)</h2>
-<p>यह वेबसाइट शिक्षा और सामाजिक विकास के लिए समर्पित है।</p>
+<!-- HERO -->
+<div class="hero">
+  <img src="hero.jpg">
 </div>
 
+<!-- CTA -->
+<a href="#" class="btn">Join करें</a>
+
+<!-- ABOUT -->
 <div class="box">
-<h2>🌍 English</h2>
-<p>This website is dedicated to education and social development.</p>
+<h3>हम क्या करते हैं</h3>
+<p>
+हम बच्चों और युवाओं को मोबाइल के माध्यम से सीखने, बनाने और आगे बढ़ने की दिशा देते हैं।
+</p>
 </div>
 
-<div class="box">
-<h2>🌍 العربية</h2>
-<p>هذا الموقع مخصص للتعليم والتنمية الاجتماعية.</p>
+<!-- TRUST PDF -->
+<div class="box pdf">
+<h3>📄 Trust & Documents</h3>
+
+<a href="darpan.pdf" target="_blank">
+📑 NGO Darpan Certificate देखें
+</a>
+
+<a href="csr1.pdf" target="_blank">
+📑 CSR Document देखें
+</a>
+
+</div>
+
+<!-- FOOTER -->
+<div class="links" style="margin-top:20px;">
+© FFGPMT TRUST
 </div>
 
 </body>
