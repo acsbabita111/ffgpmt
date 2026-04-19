@@ -19,7 +19,6 @@ body{
   display:flex;
   align-items:center;
   gap:10px;
-  margin-bottom:10px;
 }
 
 .header img{
@@ -31,10 +30,42 @@ body{
   font-size:18px;
 }
 
+/* LINKS */
+.links{
+  text-align:center;
+  margin:8px 0;
+}
+
+.links a{
+  margin:0 5px;
+  text-decoration:none;
+  color:#2563EB;
+  font-weight:bold;
+}
+
 /* HERO */
+.hero{
+  position:relative;
+  margin-top:10px;
+}
+
 .hero img{
   width:100%;
   border-radius:12px;
+}
+
+/* HERO TEXT */
+.hero-text{
+  position:absolute;
+  bottom:20px;
+  left:15px;
+  right:15px;
+  color:white;
+  font-weight:bold;
+  font-size:18px;
+  background:rgba(0,0,0,0.4);
+  padding:10px;
+  border-radius:8px;
 }
 
 /* BUTTON */
@@ -43,32 +74,22 @@ body{
   text-align:center;
   background:#16A34A;
   color:white;
-  padding:12px;
-  border-radius:10px;
+  padding:14px;
+  border-radius:12px;
   margin-top:10px;
-  text-decoration:none;
   font-weight:bold;
+  font-size:16px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+  text-decoration:none;
 }
 
-/* SECTION */
+/* BOX */
 .box{
   background:white;
   padding:12px;
   border-radius:12px;
   margin-top:10px;
   box-shadow:0 2px 6px rgba(0,0,0,0.05);
-}
-
-/* LINKS */
-.links{
-  text-align:center;
-  margin-top:10px;
-}
-
-.links a{
-  margin:0 5px;
-  text-decoration:none;
-  color:#2563EB;
 }
 
 /* PDF */
@@ -80,6 +101,14 @@ body{
   margin-top:5px;
   text-decoration:none;
   color:black;
+}
+
+/* FOOTER */
+.footer{
+  text-align:center;
+  margin-top:20px;
+  font-size:12px;
+  color:#555;
 }
 </style>
 
@@ -93,7 +122,7 @@ body{
   <div class="title">FFGPMT TRUST</div>
 </div>
 
-<!-- WEBSITE SWITCH -->
+<!-- WEBSITE LINKS -->
 <div class="links">
 🏠 Websites:
 <a href="https://ffgpmt.org/">FFGPMT</a> |
@@ -112,10 +141,13 @@ body{
 <!-- HERO -->
 <div class="hero">
   <img src="hero.jpg">
+  <div class="hero-text">
+    हर बच्चे को डिजिटल सीखने का अवसर
+  </div>
 </div>
 
-<!-- CTA -->
-<a href="#" class="btn">Join करें</a>
+<!-- BUTTON -->
+<a href="#" class="btn">🚀 अभी जुड़ें</a>
 
 <!-- ABOUT -->
 <div class="box">
@@ -125,7 +157,7 @@ body{
 </p>
 </div>
 
-<!-- TRUST PDF -->
+<!-- TRUST -->
 <div class="box pdf">
 <h3>📄 Trust & Documents</h3>
 
@@ -140,7 +172,7 @@ body{
 </div>
 
 <!-- FOOTER -->
-<div class="links" style="margin-top:20px;">
+<div class="footer">
 © FFGPMT TRUST
 </div>
 
