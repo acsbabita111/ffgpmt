@@ -1,207 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>FFGPMT | Freedom Fighter Gangadhar Prasad Memorial Trust</title>
+<title>Freedom Fighter Gangadhar Prasad Memorial Trust (FFGPMT)</title>
 
-  <!-- Language SEO (13 Languages) -->
-  <link rel="alternate" hreflang="hi" href="https://ffgpmt.org/index.html">
-  <link rel="alternate" hreflang="en" href="https://ffgpmt.org/en/index.html">
-  <link rel="alternate" hreflang="ar" href="https://ffgpmt.org/ar/index.html">
-  <link rel="alternate" hreflang="bn" href="https://ffgpmt.org/bn/index.html">
-  <link rel="alternate" hreflang="fr" href="https://ffgpmt.org/fr/index.html">
-  <link rel="alternate" hreflang="de" href="https://ffgpmt.org/de/index.html">
-  <link rel="alternate" hreflang="id" href="https://ffgpmt.org/id/index.html">
-  <link rel="alternate" hreflang="ja" href="https://ffgpmt.org/ja/index.html">
-  <link rel="alternate" hreflang="zh" href="https://ffgpmt.org/zh/index.html">
-  <link rel="alternate" hreflang="pt" href="https://ffgpmt.org/pt/index.html">
-  <link rel="alternate" hreflang="ru" href="https://ffgpmt.org/ru/index.html">
-  <link rel="alternate" hreflang="es" href="https://ffgpmt.org/es/index.html">
-  <link rel="alternate" hreflang="ur" href="https://ffgpmt.org/ur/index.html">
-  <link rel="alternate" hreflang="x-default" href="https://ffgpmt.org/index.html">
+<!-- SEO -->
+<meta name="description" content="FFGPMT provides mobile-based digital education for children and youth.">
+<meta name="keywords" content="FFGPMT, NGO India, Digital Education, ACS Learn">
+<meta name="author" content="FFGPMT">
 
-  <style>
-    body {
-      font-family: system-ui, -apple-system, sans-serif;
-      max-width: 430px;
-      margin: auto;
-      padding: 12px;
-      background: #f8fafc;
-      color: #111827;
-    }
+<!-- Open Graph -->
+<meta property="og:title" content="FFGPMT Trust">
+<meta property="og:description" content="Digital learning opportunity for every child">
+<meta property="og:image" content="https://ffgpmt.org/hero.jpg">
 
-    .card {
-      background: white;
-      border-radius: 14px;
-      padding: 14px;
-      margin-bottom: 14px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
+<!-- Language SEO -->
+<link rel="alternate" href="https://ffgpmt.org/index.html" hreflang="hi">
+<link rel="alternate" href="https://ffgpmt.org/en/index.html" hreflang="en">
+<link rel="alternate" href="https://ffgpmt.org/ar/index.html" hreflang="ar">
 
-    /* 🇮🇳 TRI-COLOR HEADER */
-    .header-card {
-      background: linear-gradient(to bottom, #ff9933, #ffffff, #138808);
-      border-radius: 14px;
-      padding: 14px;
-      margin-bottom: 14px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    }
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f4f6fb;
+}
 
-    .header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+.container{
+  max-width:430px;
+  margin:auto;
+  padding:12px;
+}
 
-    .logo {
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background: white;
-      padding: 4px;
-    }
+/* HEADER */
+.header{
+  background:linear-gradient(180deg,#ff9933,#ffffff,#138808);
+  border-radius:18px;
+  text-align:center;
+  padding:16px 12px;
+  box-shadow:0 6px 16px rgba(0,0,0,0.15);
+}
 
-    .title {
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 1.3;
-      color: #0f172a;
-    }
+.logo{
+  width:70px;
+  border-radius:50%;
+  margin-bottom:8px;
+}
 
-    .subtitle {
-      font-size: 12px;
-      color: #374151;
-    }
+.title{
+  font-size:18px;
+  font-weight:700;
+}
 
-    .lang {
-      text-align: center;
-      font-size: 13px;
-      margin-top: 8px;
-      line-height: 1.6;
-    }
+.subtitle{
+  font-size:14px;
+  color:#333;
+  margin-top:4px;
+}
 
-    .lang a {
-      text-decoration: none;
-      color: #1d4ed8;
-      font-weight: 500;
-      margin: 2px;
-      display: inline-block;
-    }
+/* LANGUAGE */
+.lang{
+  margin-top:10px;
+  font-size:14px;
+}
 
-    .hero {
-      width: 100%;
-      border-radius: 12px;
-    }
+.lang a{
+  color:#1e3a8a;
+  text-decoration:none;
+  margin:4px;
+  display:inline-block;
+  font-weight:500;
+}
 
-    .hero-text {
-      margin-top: -60px;
-      text-align: center;
-      color: white;
-      font-weight: bold;
-      font-size: 16px;
-      background: rgba(0,0,0,0.35);
-      padding: 8px;
-      border-radius: 8px;
-    }
+/* HERO */
+.hero{
+  margin-top:14px;
+  position:relative;
+}
 
-    .btn {
-      display: block;
-      text-align: center;
-      background: #16a34a;
-      color: white;
-      padding: 14px;
-      border-radius: 10px;
-      font-size: 16px;
-      text-decoration: none;
-      margin-top: 14px;
-      font-weight: bold;
-    }
+.hero img{
+  width:100%;
+  border-radius:16px;
+}
 
-    .section-title {
-      font-weight: bold;
-      margin-bottom: 6px;
-    }
+.hero-text{
+  position:absolute;
+  bottom:12px;
+  left:10px;
+  right:10px;
+  background:rgba(0,0,0,0.4);
+  color:white;
+  padding:10px;
+  border-radius:10px;
+  text-align:center;
+  font-size:14px;
+}
 
-    .doc a {
-      display: block;
-      padding: 10px;
-      background: #eef2ff;
-      border-radius: 8px;
-      margin-top: 6px;
-      text-decoration: none;
-      color: #1e3a8a;
-    }
-  </style>
+/* CTA */
+.cta{
+  display:block;
+  text-align:center;
+  background:linear-gradient(135deg,#16a34a,#22c55e);
+  color:white;
+  padding:14px;
+  border-radius:14px;
+  margin-top:12px;
+  font-size:16px;
+  font-weight:bold;
+  text-decoration:none;
+  box-shadow:0 6px 14px rgba(0,0,0,0.2);
+}
+
+/* SECTION */
+.section{
+  margin-top:18px;
+}
+
+.section h3{
+  margin-bottom:6px;
+}
+</style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <div class="header-card">
-    <div class="header">
-      <img src="../logo.png" class="logo" />
-      <div>
-        <div class="title">
-          Freedom Fighter Gangadhar Prasad Memorial Trust
-        </div>
-        <div class="subtitle">(FFGPMT)</div>
-      </div>
-    </div>
+<div class="container">
 
-    <!-- 🌐 LANGUAGE SWITCH -->
-    <div class="lang">
-      🌐 Language:
-      <a href="/index.html">Hindi</a>
-      <a href="/en/index.html">English</a>
-      <a href="/ar/index.html">العربية</a>
-      <a href="/bn/index.html">বাংলা</a>
-      <a href="/fr/index.html">Français</a>
-      <a href="/de/index.html">Deutsch</a>
-      <a href="/id/index.html">Bahasa</a>
-      <a href="/ja/index.html">日本語</a>
-      <a href="/zh/index.html">中文</a>
-      <a href="/pt/index.html">Português</a>
-      <a href="/ru/index.html">Русский</a>
-      <a href="/es/index.html">Español</a>
-      <a href="/ur/index.html">اردو</a>
-    </div>
+<!-- HEADER -->
+<div class="header">
+  <img src="../logo.png" class="logo">
+
+  <div class="title">
+    Freedom Fighter Gangadhar Prasad Memorial Trust
   </div>
 
-  <!-- HERO -->
-  <div class="card">
-    <img src="../hero.jpg" class="hero" />
-    <div class="hero-text">
-      Digital learning opportunity for every child
-    </div>
-
-    <a href="https://acslearn.com/" class="btn">
-      🚀 Start Learning Now
-    </a>
+  <div class="subtitle">
+    (FFGPMT)
   </div>
 
-  <!-- WHAT WE DO -->
-  <div class="card">
-    <div class="section-title">What We Do</div>
-    <p>
-      We provide mobile-first digital skills training so that children and youth
-      can learn, build, and grow using just a smartphone.
-    </p>
+  <div class="lang">
+    🌐 Language:<br>
+
+    <a href="/index.html">हिंदी</a>
+    <a href="/en/index.html">English</a>
+    <a href="/ar/index.html">العربية</a>
+    <a href="/bn/index.html">বাংলা</a>
+    <a href="/fr/index.html">Français</a>
+    <a href="/de/index.html">Deutsch</a>
+    <a href="/id/index.html">Bahasa</a><br>
+
+    <a href="/ja/index.html">日本語</a>
+    <a href="/zh/index.html">中文</a>
+    <a href="/pt/index.html">Português</a>
+    <a href="/ru/index.html">Русский</a>
+    <a href="/es/index.html">Español</a>
+    <a href="/ur/index.html">اردو</a>
   </div>
+</div>
 
-  <!-- DOCUMENTS -->
-  <div class="card doc">
-    <div class="section-title">📄 Trust Documents</div>
-
-    <a href="../darpan.pdf" target="_blank">
-      📜 View NGO Darpan Certificate
-    </a>
-
-    <a href="../csr1.pdf" target="_blank">
-      📊 View CSR Certificate
-    </a>
+<!-- HERO -->
+<div class="hero">
+  <img src="../hero.jpg">
+  <div class="hero-text">
+    Digital learning opportunity for every child
   </div>
+</div>
+
+<!-- CTA -->
+<a href="https://acslearn.com" class="cta">
+🚀 Start Learning Now
+</a>
+
+<!-- ABOUT -->
+<div class="section">
+  <h3>What We Do</h3>
+  <p>
+    We empower children and youth through mobile-based learning, creation, and growth opportunities.
+  </p>
+</div>
+
+<!-- DOCUMENTS -->
+<div class="section">
+  <h3>Trust & Documents</h3>
+  <p><a href="../darpan.pdf">📄 NGO Darpan Certificate</a></p>
+  <p><a href="../csr1.pdf">📄 CSR Document</a></p>
+</div>
+
+</div>
 
 </body>
 </html>
