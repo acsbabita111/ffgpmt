@@ -1,1 +1,513 @@
+<!DOCTYPE html>
+<html lang="hi" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>फ्रीडम फाइटर गंगाधर प्रसाद मेमोरियल ट्रस्ट | ffgpmt.org</title>
+<meta name="description" content="फ्रीडम फाइटर गंगाधर प्रसाद मेमोरियल ट्रस्ट — निःशुल्क व्यावसायिक शिक्षा कार्यक्रम। Applied Computer School™ के माध्यम से ग्राम से विश्व तक।" />
+<link rel="canonical" href="https://ffgpmt.org/" />
+<meta property="og:title" content="फ्रीडम फाइटर गंगाधर प्रसाद मेमोरियल ट्रस्ट" />
+<meta property="og:description" content="निःशुल्क व्यावसायिक शिक्षा कार्यक्रम — ग्राम से विश्व तक।" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ffgpmt.org/" />
+<meta property="og:locale" content="hi_IN" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700;800&display=swap" rel="stylesheet" />
+<style>
+/* === RESET === */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
 
+/* === TOKENS === */
+:root{
+  --navy:#0f2247;
+  --green:#1a7f47;
+  --green-dk:#145f35;
+  --gold:#c8960c;
+  --gold-lt:#fef6dc;
+  --white:#fff;
+  --cream:#fdfaf4;
+  --text:#1a1a2e;
+  --muted:#5a6478;
+  --border:#dde3ee;
+  --font:'Noto Sans Devanagari',sans-serif;
+  --radius:14px;
+  --shadow:0 2px 16px rgba(15,34,71,.10);
+  --shadow-md:0 4px 28px rgba(15,34,71,.15);
+}
+
+/* === BASE === */
+body{
+  font-family:var(--font);
+  font-size:16px;
+  line-height:1.7;
+  color:var(--text);
+  background:var(--cream);
+  -webkit-font-smoothing:antialiased;
+}
+
+/* === LAYOUT === */
+.container{width:100%;max-width:1000px;margin:0 auto;padding:0 20px}
+.section{padding:52px 0}
+.section-alt{background:#f0f4f9}
+.section-dark{background:var(--navy)}
+.section-green{background:var(--green)}
+
+.sec-title{
+  font-size:clamp(1.4rem,4.5vw,2rem);
+  font-weight:800;
+  color:var(--navy);
+  text-align:center;
+  margin-bottom:8px;
+  line-height:1.3;
+}
+.sec-title.light{color:var(--white)}
+.sec-sub{
+  text-align:center;
+  color:var(--muted);
+  font-size:.95rem;
+  margin-bottom:32px;
+}
+.sec-sub.light{color:rgba(255,255,255,.6)}
+
+/* === BUTTON === */
+.btn{
+  display:inline-block;
+  font-family:var(--font);
+  font-weight:700;
+  font-size:1rem;
+  padding:13px 26px;
+  border-radius:50px;
+  border:none;
+  cursor:pointer;
+  transition:all .2s;
+  min-height:50px;
+  text-align:center;
+}
+.btn-primary{background:var(--navy);color:var(--white);box-shadow:0 4px 16px rgba(15,34,71,.25)}
+.btn-primary:hover{background:#1a3460;transform:translateY(-1px)}
+.btn-green{background:var(--green);color:var(--white);box-shadow:0 4px 16px rgba(26,127,71,.22)}
+.btn-green:hover{background:var(--green-dk);transform:translateY(-1px)}
+.btn-outline{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,.5)}
+.btn-outline:hover{background:var(--white);color:var(--navy)}
+
+/* === HEADER === */
+.site-header{
+  position:sticky;top:0;z-index:900;
+  background:var(--navy);
+  height:62px;
+  box-shadow:0 2px 12px rgba(0,0,0,.2);
+}
+.header-inner{
+  max-width:1000px;margin:0 auto;padding:0 16px;
+  height:100%;display:flex;align-items:center;justify-content:space-between;
+}
+.brand{display:flex;align-items:center;gap:10px}
+.brand-mark{
+  width:44px;height:44px;border-radius:10px;
+  background:var(--gold);color:var(--navy);
+  font-weight:900;font-size:.85rem;letter-spacing:-.5px;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;text-align:center;line-height:1.1;
+}
+.brand-text{display:flex;flex-direction:column}
+.brand-name{font-size:.95rem;font-weight:800;color:var(--white);line-height:1.2}
+.brand-name sup{font-size:.6em}
+.brand-domain{font-size:.7rem;color:rgba(255,255,255,.45)}
+.menu-btn{
+  background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.2);
+  border-radius:8px;padding:9px 11px;cursor:pointer;
+  display:flex;flex-direction:column;gap:4px;min-height:40px;min-width:40px;
+  align-items:center;justify-content:center;
+}
+.menu-btn span{display:block;width:20px;height:2px;background:#fff;border-radius:2px}
+.menu-btn:hover{background:rgba(255,255,255,.2)}
+
+/* === MOBILE MENU === */
+.mobile-menu{
+  position:fixed;top:0;right:0;
+  width:min(300px,88vw);height:100dvh;
+  background:var(--white);z-index:1000;
+  transform:translateX(100%);
+  transition:transform .28s cubic-bezier(.4,0,.2,1);
+  overflow-y:auto;display:flex;flex-direction:column;
+}
+.mobile-menu.open{transform:translateX(0)}
+.menu-head{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:16px 20px;background:var(--navy);color:var(--white);
+  font-weight:700;font-size:1rem;
+}
+.menu-close{background:none;border:none;color:var(--white);font-size:1.3rem;cursor:pointer;padding:4px 8px;border-radius:6px}
+.menu-close:hover{background:rgba(255,255,255,.2)}
+.menu-links{flex:1;padding:8px 0}
+.menu-links a{
+  display:block;padding:14px 22px;
+  font-weight:600;font-size:.98rem;color:var(--navy);
+  border-bottom:1px solid var(--border);
+  transition:background .15s;
+}
+.menu-links a:hover{background:#f0f4f9}
+.menu-footer{padding:16px 22px;background:#f0f4f9}
+.menu-footer a{display:block;font-size:.88rem;color:var(--green-dk);font-weight:600;margin-bottom:6px}
+.overlay{
+  position:fixed;inset:0;background:rgba(0,0,0,.5);
+  z-index:950;opacity:0;pointer-events:none;transition:opacity .25s;
+}
+.overlay.active{opacity:1;pointer-events:all}
+
+/* === HERO === */
+.hero{
+  background:linear-gradient(160deg,#0f2247 0%,#1a3a6e 60%,#1a4a2e 100%);
+  padding:48px 20px 56px;
+  position:relative;overflow:hidden;
+}
+.hero::after{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at 80% 50%,rgba(200,150,12,.08) 0%,transparent 65%);
+  pointer-events:none;
+}
+.hero-inner{position:relative;z-index:1;max-width:680px;margin:0 auto;text-align:center}
+.hero-badge{
+  display:inline-block;
+  background:rgba(200,150,12,.18);
+  color:var(--gold);
+  border:1px solid rgba(200,150,12,.4);
+  border-radius:30px;padding:5px 16px;
+  font-size:.8rem;font-weight:700;letter-spacing:.04em;
+  margin-bottom:20px;
+}
+.hero-title{
+  font-size:clamp(1rem,3vw,1.15rem);
+  font-weight:700;color:rgba(255,255,255,.7);
+  margin-bottom:10px;letter-spacing:.03em;
+  text-transform:uppercase;
+}
+.hero-name{
+  font-size:clamp(1.55rem,6vw,2.6rem);
+  font-weight:900;color:var(--white);
+  line-height:1.25;margin-bottom:6px;
+}
+.hero-name-hi{
+  font-size:clamp(1.1rem,4vw,1.75rem);
+  font-weight:700;
+  color:var(--gold);
+  margin-bottom:22px;
+  line-height:1.3;
+}
+.hero-line{width:50px;height:3px;background:var(--gold);border-radius:3px;margin:0 auto 22px;opacity:.7}
+.hero-desc{
+  font-size:clamp(.95rem,2.8vw,1.1rem);
+  color:rgba(255,255,255,.8);
+  margin-bottom:30px;line-height:1.8;
+}
+.hero-desc strong{color:var(--white);font-weight:700}
+.hero-btns{display:flex;flex-direction:column;gap:12px;align-items:stretch}
+.hero-btns .btn{width:100%}
+
+/* === TRUST STRIP === */
+.trust-strip{
+  background:var(--green);
+  padding:11px 20px;text-align:center;
+}
+.trust-strip p{
+  font-size:clamp(.78rem,2.4vw,.92rem);
+  font-weight:600;color:var(--white);
+  display:flex;align-items:center;justify-content:center;
+  gap:8px;flex-wrap:wrap;
+}
+.trust-strip p span{opacity:.75}
+
+/* === CARDS === */
+.cards{display:grid;grid-template-columns:1fr;gap:16px}
+.card{
+  background:var(--white);border-radius:var(--radius);
+  padding:22px 20px;box-shadow:var(--shadow);
+  border:1.5px solid var(--border);
+  display:flex;flex-direction:column;gap:10px;
+  transition:box-shadow .2s,transform .2s;
+}
+.card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
+.card-icon{font-size:2rem;line-height:1}
+.card-title{font-size:1.05rem;font-weight:700;color:var(--navy);line-height:1.35}
+.card-desc{font-size:.9rem;color:var(--muted);line-height:1.65;flex:1}
+.card-link{
+  display:inline-block;
+  color:var(--green-dk);font-weight:700;font-size:.9rem;
+  padding:6px 0;border-bottom:2px solid transparent;
+  transition:border-color .2s;align-self:flex-start;
+  margin-top:4px;
+}
+.card-link:hover{border-bottom-color:var(--green)}
+
+/* === ABOUT SECTION === */
+.about-grid{display:flex;flex-direction:column;gap:20px}
+.about-text p{font-size:.97rem;color:var(--muted);margin-bottom:12px;line-height:1.8}
+.about-text strong{color:var(--navy)}
+.highlight-box{
+  background:var(--gold-lt);border-left:4px solid var(--gold);
+  border-radius:0 12px 12px 0;padding:16px 18px;
+  font-size:.95rem;color:#6b4c00;font-weight:600;line-height:1.7;
+}
+
+/* === PILLARS === */
+.pillars{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pillar{
+  background:rgba(255,255,255,.07);
+  border:1.5px solid rgba(255,255,255,.12);
+  border-radius:12px;padding:18px 16px;
+  text-align:center;
+}
+.pillar-icon{font-size:1.8rem;margin-bottom:8px}
+.pillar h4{font-size:.95rem;font-weight:700;color:var(--white);margin-bottom:4px}
+.pillar p{font-size:.82rem;color:rgba(255,255,255,.6);line-height:1.5}
+
+/* === DISCLAIMER === */
+.disclaimer-box{
+  background:#fff8e1;
+  border:1.5px solid #ffe082;
+  border-radius:var(--radius);
+  padding:20px;
+  font-size:.88rem;
+  color:#5a4000;
+  line-height:1.8;
+}
+.disclaimer-box h3{
+  font-size:.95rem;font-weight:800;
+  color:var(--navy);margin-bottom:10px;
+  display:flex;align-items:center;gap:8px;
+}
+.disclaimer-box a{color:var(--green-dk);font-weight:600;text-decoration:underline}
+.disclaimer-box ul{padding-left:0;margin-top:8px}
+.disclaimer-box ul li{margin-bottom:6px;padding-left:16px;position:relative}
+.disclaimer-box ul li::before{content:'•';position:absolute;left:0;color:var(--gold)}
+
+/* === CONTACT === */
+.contact-list{display:flex;flex-direction:column;gap:12px}
+.contact-item{
+  display:flex;align-items:center;gap:14px;
+  background:rgba(255,255,255,.1);
+  border:1.5px solid rgba(255,255,255,.15);
+  border-radius:12px;padding:14px 16px;
+  color:var(--white);font-weight:600;font-size:.95rem;
+  transition:background .15s;
+}
+.contact-item:hover{background:rgba(255,255,255,.18)}
+.contact-item .ci-icon{font-size:1.5rem;flex-shrink:0}
+.contact-item small{font-weight:400;font-size:.78rem;color:rgba(255,255,255,.55);display:block}
+
+/* === FOOTER === */
+.site-footer{background:var(--navy);padding:36px 0 24px;color:rgba(255,255,255,.65)}
+.footer-top{display:flex;flex-direction:column;gap:24px;margin-bottom:28px}
+.footer-brand strong{color:var(--white);font-size:1rem;display:block;margin-bottom:4px}
+.footer-brand p{font-size:.85rem;color:rgba(255,255,255,.45);line-height:1.6}
+.footer-brand .tagline{color:var(--gold);font-style:italic;font-size:.83rem;margin-top:4px}
+.footer-nav{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.footer-nav a{font-size:.88rem;color:rgba(255,255,255,.55);transition:color .15s;padding:3px 0}
+.footer-nav a:hover{color:var(--white)}
+.footer-notice{
+  background:rgba(255,255,255,.06);border-radius:8px;
+  padding:12px 16px;font-size:.82rem;
+  color:rgba(255,255,255,.45);margin-bottom:20px;line-height:1.6;
+}
+.footer-notice strong{color:rgba(255,255,255,.7)}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.1);
+  padding-top:16px;text-align:center;
+  font-size:.78rem;color:rgba(255,255,255,.3);
+}
+
+/* === WHATSAPP FLOAT === */
+.wa-float{
+  position:fixed;bottom:20px;right:16px;z-index:800;
+  background:#25d366;color:var(--white);
+  border-radius:50px;padding:12px 16px 12px 13px;
+  display:flex;align-items:center;gap:7px;
+  font-weight:700;font-size:.85rem;
+  box-shadow:0 4px 18px rgba(37,211,102,.4);
+  transition:transform .2s,box-shadow .2s;
+}
+.wa-float:hover{transform:translateY(-2px);box-shadow:0 6px 26px rgba(37,211,102,.5)}
+.wa-float svg{flex-shrink:0}
+
+/* === FOCUS === */
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+
+/* === TABLET 600px+ === */
+@media(min-width:600px){
+  .cards{grid-template-columns:1fr 1fr}
+  .pillars{grid-template-columns:repeat(4,1fr)}
+  .hero-btns{flex-direction:row;justify-content:center}
+  .hero-btns .btn{width:auto}
+  .contact-list{display:grid;grid-template-columns:1fr 1fr}
+  .footer-top{flex-direction:row;justify-content:space-between}
+}
+
+/* === DESKTOP 900px+ === */
+@media(min-width:900px){
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .section{padding:72px 0}
+  .hero{padding:72px 20px 80px}
+}
+</style>
+</head>
+<body>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/919431210092" class="wa-float" aria-label="WhatsApp पर संपर्क करें" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  WhatsApp
+</a>
+
+<!-- HEADER -->
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="/" class="brand" aria-label="FFGPMT Trust होम">
+      <div class="brand-mark" aria-hidden="true">FFG<br>PMT</div>
+      <div class="brand-text">
+        <span class="brand-name">फ्रीडम फाइटर गंगाधर प्रसाद<br>मेमोरियल ट्रस्ट</span>
+        <span class="brand-domain">ffgpmt.org</span>
+      </div>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="मेनू खोलें" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<nav class="mobile-menu" id="mobileMenu" aria-hidden="true" role="navigation">
+  <div class="menu-head">
+    <span>मेनू</span>
+    <button class="menu-close" id="menuClose" aria-label="बंद करें">✕</button>
+  </div>
+  <div class="menu-links">
+    <a href="#about">🏛️ ट्रस्ट परिचय</a>
+    <a href="#mission">🎯 हमारा उद्देश्य</a>
+    <a href="#programs">📚 कार्यक्रम</a>
+    <a href="#acs">🖥️ अप्लाइड कंप्यूटर स्कूल™</a>
+    <a href="#contact">📞 संपर्क</a>
+    <a href="https://acslearn.com" target="_blank" rel="noopener">🌐 acslearn.com →</a>
+  </div>
+  <div class="menu-footer">
+    <a href="tel:+919431210092">📞 +91-9431210092</a>
+    <a href="mailto:acs.chautham@gmail.com">✉️ acs.chautham@gmail.com</a>
+  </div>
+</nav>
+<div class="overlay" id="overlay" aria-hidden="true"></div>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip" role="note">
+  <p>
+    <span>🛡️</span>
+    <strong>सभी ऑनलाइन पाठ्यक्रम पूर्णतः निःशुल्क</strong>
+    <span>|</span>
+    <span>बिना registration &nbsp;•&nbsp; बिना login &nbsp;•&nbsp; बिना payment</span>
+  </p>
+</div>
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="hero-inner">
+    <div class="hero-badge" aria-hidden="true">ffgpmt.org — आधिकारिक वेबसाइट</div>
+    <p class="hero-title">स्वतंत्रता सेनानी</p>
+    <h1 class="hero-name" id="hero-heading">Freedom Fighter<br>Gangadhar Prasad<br>Memorial Trust</h1>
+    <p class="hero-name-hi">फ्रीडम फाइटर गंगाधर प्रसाद मेमोरियल ट्रस्ट</p>
+    <div class="hero-line" aria-hidden="true"></div>
+    <p class="hero-desc">
+      <strong>ग्राम से विश्व तक</strong> — निःशुल्क डिजिटल शिक्षा का संकल्प।<br />
+      Applied Computer School™ के माध्यम से<br />
+      बेरोजगार युवाओं को रोजगार का रास्ता दिखाना।
+    </p>
+    <div class="hero-btns">
+      <a href="https://acslearn.com" class="btn btn-green" target="_blank" rel="noopener">निःशुल्क कोर्स देखें →</a>
+      <a href="#programs" class="btn btn-outline">हमारे कार्यक्रम</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about" aria-labelledby="about-heading">
+  <div class="container">
+    <h2 class="sec-title" id="about-heading">ट्रस्ट परिचय</h2>
+    <p class="sec-sub">एक स्वतंत्रता सेनानी की स्मृति में — शिक्षा का संकल्प</p>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>फ्रीडम फाइटर गंगाधर प्रसाद मेमोरियल ट्रस्ट की स्थापना <strong>स्वतंत्रता सेनानी गंगाधर प्रसाद जी</strong> की स्मृति और उनके आदर्शों को जीवित रखने के लिए की गई है।</p>
+        <p>उनका विश्वास था कि सच्ची स्वतंत्रता केवल राजनैतिक नहीं, बल्कि <strong>आर्थिक और शैक्षिक स्वतंत्रता</strong> से आती है। इसी विचार को आगे ले जाते हुए यह ट्रस्ट ग्रामीण और वंचित युवाओं के लिए निःशुल्क व्यावसायिक शिक्षा का कार्य करता है।</p>
+        <div class="highlight-box">
+          "जहाँ शिक्षा पहुँचेगी, वहाँ रोजगार का रास्ता खुलेगा।<br>जहाँ रोजगार होगा, वहाँ परिवार उठेगा।<br>जहाँ परिवार उठेगा, वहाँ गाँव बदलेगा।"
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="section section-alt" id="mission" aria-labelledby="mission-heading">
+  <div class="container">
+    <h2 class="sec-title" id="mission-heading">हमारा उद्देश्य</h2>
+    <p class="sec-sub">चार स्तंभ जिन पर यह ट्रस्ट खड़ा है</p>
+    <div class="cards">
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">📚</div>
+        <h3 class="card-title">निःशुल्क शिक्षा</h3>
+        <p class="card-desc">ऑनलाइन व्यावसायिक और डिजिटल शिक्षा पूर्णतः निःशुल्क — बिना login, बिना registration, बिना किसी शर्त के।</p>
+      </article>
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">🌾</div>
+        <h3 class="card-title">ग्रामीण सशक्तीकरण</h3>
+        <p class="card-desc">गाँव और कस्बों के युवाओं को मोबाइल से training देकर रोजगार के योग्य बनाना — Global South के लिए।</p>
+      </article>
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">🤝</div>
+        <h3 class="card-title">स्थानीय ecosystem</h3>
+        <p class="card-desc">दुकान, गैरेज, workshop, mentor, employer — सभी को एक रोजगार network में जोड़ना।</p>
+      </article>
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">🛡️</div>
+        <h3 class="card-title">Reality-based guidance</h3>
+        <p class="card-desc">Dream नहीं, reality दिखाना। Investment, time, risk — सब साफ बताना। कोई झूठी guarantee नहीं।</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PILLARS (dark) -->
+<section class="section section-dark" aria-labelledby="pillars-heading">
+  <div class="container">
+    <h2 class="sec-title light" id="pillars-heading">ट्रस्ट के चार स्तंभ</h2>
+    <p class="sec-sub light">जिन मूल्यों पर यह कार्य टिका है</p>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pillar-icon" aria-hidden="true">🕊️</div>
+        <h4>स्वतंत्रता</h4>
+        <p>आर्थिक और शैक्षिक स्वतंत्रता ही असली आज़ादी है</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon" aria-hidden="true">⚖️</div>
+        <h4>समता</h4>
+        <p>गाँव और शहर का विद्यार्थी — समान अवसर</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon" aria-hidden="true">🌱</div>
+        <h4>सेवा</h4>
+        <p>बिना लाभ के, बिना शर्त के — निःशुल्क शिक्षा</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon" aria-hidden="true">💡</div>
+        <h4>सच्चाई</h4>
+        <p>Reality दिखाना, dream नहीं बेचना</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS -->
+<section class="section" id="programs" aria-labelledby="programs-heading">
+  <div class="container">
+    <h2
