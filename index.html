@@ -158,6 +158,12 @@
     .map-btn a{display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;border:1px solid #b9d2cc;background:#f8fcfb;color:var(--green-deep);font-weight:850;border-radius:13px;padding:11px 14px}
     .map-btn a:hover{background:#edf8f5}
     .map-note{font-size:.82rem;color:#738396;text-align:center;margin-top:16px}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
+    .gallery figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}
+    .gallery img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+    .gallery figcaption{padding:12px 16px 14px;font-size:.9rem;line-height:1.45;color:#536477}
+    @media (max-width:820px){.gallery{grid-template-columns:1fr 1fr}}
+    @media (max-width:600px){.gallery{grid-template-columns:1fr}}
 
     /* Approach */
     .principles{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:32px}
@@ -256,8 +262,8 @@
     "alternateName":"FFGPMT",
     "url":"https://ffgpmt.org/",
     "logo":"https://ffgpmt.org/logo-512.png",
-    "address":{"@type":"PostalAddress","streetAddress":"Laxmiganga, Village and P.O. Bhutauli Malpa, Ward No. 17, P.S. Chautham","addressLocality":"Khagaria","addressRegion":"Bihar","postalCode":"851201","addressCountry":"IN"},
-    "location":{"@type":"Place","name":"Corporate Office","address":{"@type":"PostalAddress","streetAddress":"ACS Building, Vidyarthi Nagar, Ward No. 18, Village Karua, P.O. and P.S. Chautham","addressLocality":"Khagaria","addressRegion":"Bihar","postalCode":"851201","addressCountry":"IN"}},
+    "address":{"@type":"PostalAddress","streetAddress":"Laxmiganga, Bhutauli Malpa, Ward: 17, Chautham","addressLocality":"Khagaria","addressRegion":"Bihar","postalCode":"851201","addressCountry":"IN"},
+    "location":{"@type":"Place","name":"Corporate Office","address":{"@type":"PostalAddress","streetAddress":"ACS Building, Vidyarthi Nagar, Karuamor Javahartola Road, PO & PS: Chautham","addressLocality":"Khagaria","addressRegion":"Bihar","postalCode":"851201","addressCountry":"IN"}},
     "foundingDate":"2023-06-05",
     "email":"info@ffgpmt.org",
     "telephone":"+91-6244-291192",
@@ -273,7 +279,7 @@
       {"@type":"ContactPoint","contactType":"WhatsApp","telephone":"+91-9431210092","areaServed":"IN"}
     ],
     "subOrganization":[
-      {"@type":"EducationalOrganization","name":"Applied Computer School, Chautham","address":{"@type":"PostalAddress","streetAddress":"ACS Building, Vidyarthi Nagar, Karua Jawahartola Road","addressLocality":"Chautham","addressRegion":"Bihar","postalCode":"851201","addressCountry":"IN"}},
+      {"@type":"EducationalOrganization","name":"Applied Computer School, Chautham","address":{"@type":"PostalAddress","streetAddress":"ACS Building, Vidyarthi Nagar, Karuamor Javahartola Road, PO & PS: Chautham","addressLocality":"Khagaria","addressRegion":"Bihar","postalCode":"851201","addressCountry":"IN"}},
       {"@type":"EducationalOrganization","name":"Applied Computer School, Baijnathpur","address":{"@type":"PostalAddress","streetAddress":"Station Road / SH-59, Baijnathpur","addressLocality":"Saharsa","addressRegion":"Bihar","postalCode":"852221","addressCountry":"IN"}},
       {"@type":"EducationalOrganization","name":"Applied Computer School, Alauli","address":{"@type":"PostalAddress","streetAddress":"Ailaas Chowk / Ladaura Road, Alauli","addressLocality":"Khagaria","addressRegion":"Bihar","postalCode":"848203","addressCountry":"IN"}}
     ]
@@ -296,6 +302,7 @@
         <a href="#impact">Impact</a>
         <a href="#network">Websites</a>
         <a href="#centres">Centres</a>
+        <a href="#gallery">Photos</a>
         <a href="#registrations">Registrations</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -488,7 +495,7 @@
               <p>Vidyarthi Nagar: founding / main ACS location</p>
             </div>
             <div class="centre-body">
-              <p class="address"><strong>Address</strong><br>ACS Building, Vidyarthi Nagar, Karua Jawahartola Road, Chautham, Khagaria, Bihar 851201</p>
+              <p class="address"><strong>Address</strong><br>ACS Building, Vidyarthi Nagar, Karuamor Javahartola Road, PO &amp; PS: Chautham, Khagaria, Bihar 851201</p>
               <div class="map-btn"><a href="https://www.google.com/maps/search/?api=1&query=Applied+Computer+School+Chautham+Khagaria+Bihar" target="_blank" rel="noopener">View on Google Maps ↗</a></div>
             </div>
           </article>
@@ -518,6 +525,23 @@
           </article>
         </div>
         <p class="map-note">Google Maps is an external service. Public map listings and map details can change over time.</p>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="wrap">
+        <div class="center">
+          <p class="eyebrow">Photo Gallery</p>
+          <h2>From the Applied Computer School centres</h2>
+        </div>
+        <div class="gallery">
+          <figure><img src="gallery-1.jpg" alt="Learners at work in the computer lab" width="720" height="480" loading="lazy" /><figcaption>Learners at work in the computer lab.</figcaption></figure>
+          <figure><img src="gallery-2.jpg" alt="Learners using headsets in the computer lab" width="720" height="480" loading="lazy" /><figcaption>Learners using headsets in the computer lab.</figcaption></figure>
+          <figure><img src="gallery-3.jpg" alt="Trainees assembled outside the training centre" width="720" height="480" loading="lazy" /><figcaption>Trainees assembled outside the training centre.</figcaption></figure>
+          <figure><img src="gallery-4.jpg" alt="A convocation ceremony for learners" width="720" height="480" loading="lazy" /><figcaption>A convocation ceremony for learners.</figcaption></figure>
+          <figure><img src="gallery-5.jpg" alt="A ribbon-cutting ceremony at the centre" width="720" height="480" loading="lazy" /><figcaption>A ribbon-cutting ceremony at the centre.</figcaption></figure>
+          <figure><img src="gallery-6.jpg" alt="Banner of a Bihar government skill-training scheme hosted at the Chautham centre" width="720" height="480" loading="lazy" /><figcaption>Banner of a Bihar government skill-training scheme hosted at the Chautham centre.</figcaption></figure>
+        </div>
       </div>
     </section>
 
@@ -601,11 +625,12 @@
               <a href="mailto:info@ffgpmt.org">info@ffgpmt.org</a>
             </div>
             <div class="contact-card">
-              <div class="ct-label">WhatsApp</div>
-              <a href="https://wa.me/919431210092" target="_blank" rel="noopener">+91 94312 10092</a>
+              <div class="ct-label">Mob. &amp; WhatsApp</div>
+              <a href="tel:+919431210092">+91 94312 10092</a><br>
+              <a href="https://wa.me/919431210092" target="_blank" rel="noopener" style="font-size:.9rem">Open WhatsApp</a>
             </div>
             <div class="contact-card">
-              <div class="ct-label">Telephone</div>
+              <div class="ct-label">Tel</div>
               <a href="tel:+916244291192">06244 291192</a>
             </div>
             <div class="contact-card">
@@ -613,12 +638,12 @@
               <a href="https://ffgpmt.org/">ffgpmt.org</a>
             </div>
             <div class="contact-card wide">
-              <div class="ct-label">Registered Office</div>
-              <address>“Laxmiganga”, Village and P.O. Bhutauli Malpa, Ward No. 17, P.S. Chautham, District Khagaria, Bihar 851201</address>
+              <div class="ct-label">Registered Address</div>
+              <address>&quot;Laxmiganga&quot;, Bhutauli Malpa, Ward: 17, Chautham, Khagaria, Bihar 851201</address>
             </div>
             <div class="contact-card wide">
-              <div class="ct-label">Corporate Office</div>
-              <address>ACS Building, Vidyarthi Nagar, Ward No. 18, Village Karua, P.O. and P.S. Chautham, District Khagaria, Bihar 851201</address>
+              <div class="ct-label">Corporate Address</div>
+              <address>ACS Building, Vidyarthi Nagar, Karuamor Javahartola Road, PO &amp; PS: Chautham, Khagaria, Bihar 851201</address>
             </div>
           </div>
         </div>
@@ -640,13 +665,13 @@
           </div>
         </div>
         <div class="footer-contact">
-          <strong>Contact</strong><br>
-          Email: <a href="mailto:info@ffgpmt.org">info@ffgpmt.org</a><br>
-          WhatsApp: <a href="https://wa.me/919431210092" target="_blank" rel="noopener">+91 94312 10092</a><br>
-          Telephone: <a href="tel:+916244291192">06244 291192</a><br>
-          Website: <a href="https://ffgpmt.org/">ffgpmt.org</a><br>
-          Registered office: “Laxmiganga”, Village and P.O. Bhutauli Malpa, Ward No. 17, P.S. Chautham, District Khagaria, Bihar 851201<br>
-          Corporate office: ACS Building, Vidyarthi Nagar, Ward No. 18, Village Karua, P.O. and P.S. Chautham, District Khagaria, Bihar 851201
+          <strong>Registered Address:</strong> &quot;Laxmiganga&quot;, Bhutauli Malpa, Ward: 17, Chautham, Khagaria, Bihar 851201<br>
+          <strong>Corporate Address:</strong> ACS Building, Vidyarthi Nagar, Karuamor Javahartola Road, PO &amp; PS: Chautham, Khagaria, Bihar 851201<br>
+          <strong>Mob. &amp; WhatsApp:</strong> <a href="tel:+919431210092">+91 94312 10092</a> (<a href="https://wa.me/919431210092" target="_blank" rel="noopener">WhatsApp</a>)<br>
+          <strong>Tel:</strong> <a href="tel:+916244291192">06244 291192</a><br>
+          <strong>Email:</strong> <a href="mailto:info@ffgpmt.org">info@ffgpmt.org</a><br>
+          <a href="https://acslearn.com/" target="_blank" rel="noopener">https://acslearn.com</a><br>
+          Website designed &amp; developed by Applied Computer School
         </div>
       </div>
       <div class="footer-bottom">
