@@ -11,6 +11,12 @@
   <meta property="og:description" content="Education • Skills • Rural Livelihoods • Workforce Readiness" />
   <meta property="og:url" content="https://ffgpmt.org/" />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://ffgpmt.org/og-card.png" />
+  <meta property="og:image:alt" content="FFGPMT logo: Freedom Fighter Gangadhar Prasad Memorial Trust" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="192x192" href="logo-192.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
   <style>
     :root{
@@ -86,11 +92,13 @@
     .btn.secondary:hover{border-color:var(--green);box-shadow:0 8px 24px rgba(20,125,111,.1)}
     .hero-card{background:#fff;border:1px solid var(--line);border-radius:30px;padding:28px;box-shadow:var(--shadow)}
     .hero-seal{display:flex;justify-content:center;margin-bottom:18px}
-    .seal{width:168px;height:168px;filter:drop-shadow(0 16px 22px rgba(11,31,58,.10))}
+    .seal{width:200px;height:200px;object-fit:contain;filter:drop-shadow(0 16px 22px rgba(11,31,58,.10))}
+    img.brand-mark{object-fit:contain;font-size:.7rem;font-weight:800;color:var(--navy)}
     .hero-card h3{text-align:center;font-size:1.18rem}
     .hero-card p{text-align:center;margin:.55rem 0 0;color:var(--muted);font-size:.94rem}
     .est{margin-top:18px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;font-size:.83rem;color:#526477}
     .est strong{color:var(--navy)}
+    .est.est2{margin-top:10px;padding-top:10px}
 
     /* Program cards */
     .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:34px}
@@ -131,6 +139,11 @@
     .site-card.school{border-top:5px solid var(--blue)}
     .site-card.digital{border-top:5px solid #7d57c2}
     .site-card.saarthi{border-top:5px solid #d0692b}
+    .site-card.assoc{border-top:5px solid #5b7d95;min-height:0}
+    .assoc-head{margin-top:44px;text-align:center}
+    .assoc-head h3{font-size:1.45rem}
+    .assoc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:22px}
+    @media (max-width:600px){.assoc-grid{grid-template-columns:1fr}}
 
     /* Centres */
     .centres{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
@@ -160,6 +173,8 @@
     .legal-card .label{display:block;color:#a9d9d1;font-size:.7rem;font-weight:850;letter-spacing:.1em;text-transform:uppercase;margin-bottom:7px}
     .legal-card strong{display:block;color:#fff;font-size:1rem;line-height:1.38;word-break:break-word}
     .legal-card small{display:block;color:#d7e3ef;margin-top:6px;line-height:1.48}
+    .legal-card.wide{grid-column:1/-1;min-height:0}
+    .legal-card a.doc-link{display:inline-block;margin-top:10px;color:#fff;font-size:.82rem;font-weight:800;text-underline-offset:3px}
     .legal-note{margin-top:18px;color:#bfcddd;font-size:.78rem;line-height:1.6}
 
     /* Contact */
@@ -169,6 +184,9 @@
     .contact-card .ct-label{font-size:.72rem;font-weight:850;letter-spacing:.09em;text-transform:uppercase;color:var(--green);margin-bottom:8px}
     .contact-card a{font-weight:850;color:var(--navy);text-decoration:none;word-break:break-word}
     .contact-card a:hover{text-decoration:underline;text-underline-offset:3px}
+    .contact-card.wide{grid-column:1/-1;min-height:0}
+    .contact-card address{font-style:normal;font-weight:750;color:var(--navy);font-size:.95rem;line-height:1.55}
+    .footer-bottom a{color:#dce7f1;font-weight:750;text-underline-offset:3px}
 
     /* Footer */
     .footer{background:#07182e;color:#fff;padding:38px 0 28px}
@@ -234,9 +252,13 @@
     "@context":"https://schema.org",
     "@type":"Organization",
     "name":"Freedom Fighter Gangadhar Prasad Memorial Trust",
+    "legalName":"Freedom Fighter Gangadhar Prasad Memorial Trust",
     "alternateName":"FFGPMT",
     "url":"https://ffgpmt.org/",
-    "foundingDate":"2019-08-15",
+    "logo":"https://ffgpmt.org/logo-512.png",
+    "address":{"@type":"PostalAddress","streetAddress":"Laxmiganga, Village and P.O. Bhutauli Malpa, Ward No. 17, P.S. Chautham","addressLocality":"Khagaria","addressRegion":"Bihar","postalCode":"851201","addressCountry":"IN"},
+    "location":{"@type":"Place","name":"Corporate Office","address":{"@type":"PostalAddress","streetAddress":"ACS Building, Vidyarthi Nagar, Ward No. 18, Village Karua, P.O. and P.S. Chautham","addressLocality":"Khagaria","addressRegion":"Bihar","postalCode":"851201","addressCountry":"IN"}},
+    "foundingDate":"2023-06-05",
     "email":"info@ffgpmt.org",
     "telephone":"+91-6244-291192",
     "sameAs":[
@@ -251,9 +273,9 @@
       {"@type":"ContactPoint","contactType":"WhatsApp","telephone":"+91-9431210092","areaServed":"IN"}
     ],
     "subOrganization":[
-      {"@type":"EducationalOrganization","name":"Applied Computer School — Chautham","address":{"@type":"PostalAddress","streetAddress":"ACS Building, Vidyarthi Nagar, Karua Jawahartola Road","addressLocality":"Chautham","addressRegion":"Bihar","postalCode":"851201","addressCountry":"IN"}},
-      {"@type":"EducationalOrganization","name":"Applied Computer School — Baijnathpur","address":{"@type":"PostalAddress","streetAddress":"Station Road / SH-59, Baijnathpur","addressLocality":"Saharsa","addressRegion":"Bihar","postalCode":"852221","addressCountry":"IN"}},
-      {"@type":"EducationalOrganization","name":"Applied Computer School — Alauli","address":{"@type":"PostalAddress","streetAddress":"Ailaas Chowk / Ladaura Road, Alauli","addressLocality":"Khagaria","addressRegion":"Bihar","postalCode":"848203","addressCountry":"IN"}}
+      {"@type":"EducationalOrganization","name":"Applied Computer School, Chautham","address":{"@type":"PostalAddress","streetAddress":"ACS Building, Vidyarthi Nagar, Karua Jawahartola Road","addressLocality":"Chautham","addressRegion":"Bihar","postalCode":"851201","addressCountry":"IN"}},
+      {"@type":"EducationalOrganization","name":"Applied Computer School, Baijnathpur","address":{"@type":"PostalAddress","streetAddress":"Station Road / SH-59, Baijnathpur","addressLocality":"Saharsa","addressRegion":"Bihar","postalCode":"852221","addressCountry":"IN"}},
+      {"@type":"EducationalOrganization","name":"Applied Computer School, Alauli","address":{"@type":"PostalAddress","streetAddress":"Ailaas Chowk / Ladaura Road, Alauli","addressLocality":"Khagaria","addressRegion":"Bihar","postalCode":"848203","addressCountry":"IN"}}
     ]
   }
   </script>
@@ -262,13 +284,7 @@
   <header class="site-header">
     <div class="wrap nav" id="nav">
       <a class="brand" href="#top" aria-label="FFGPMT home">
-        <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="FFGPMT emblem">
-          <circle cx="32" cy="32" r="30" fill="#0B1F3A"/>
-          <circle cx="32" cy="32" r="24" fill="#ffffff"/>
-          <path d="M21 39c4-3 8-4 11-4s7 1 11 4V26c-4-3-8-4-11-4s-7 1-11 4v13Z" fill="#147d6f"/>
-          <path d="M32 21c-1.8-5 3.9-6.3 2.8-10.3 5.7 4.1 7.4 9.7 2.3 14.1-1.7 1.4-3.4 2-5.1 2.2 1.4-1.7 1.6-3.7 0-6Z" fill="#F9A825"/>
-          <path d="M32 24v15" stroke="#0B1F3A" stroke-width="2.5" stroke-linecap="round"/>
-        </svg>
+        <img class="brand-mark" src="logo-192.png" alt="FFGPMT" width="52" height="52" />
         <span class="brand-text">
           <strong>FFGPMT</strong>
           <span>Freedom Fighter Gangadhar Prasad Memorial Trust</span>
@@ -291,7 +307,7 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div>
-          <p class="eyebrow">Established 15 August 2019</p>
+          <p class="eyebrow">Work began 15 August 2019 • Trust registered 5 June 2023</p>
           <h1>Education. Skills. Rural Livelihoods. Workforce Readiness.</h1>
           <p class="lead">Freedom Fighter Gangadhar Prasad Memorial Trust works to expand practical learning, vocational skills and livelihood opportunities for rural and underserved communities.</p>
           <div class="actions">
@@ -301,20 +317,12 @@
         </div>
         <aside class="hero-card" aria-label="FFGPMT identity">
           <div class="hero-seal">
-            <svg class="seal" viewBox="0 0 200 200" role="img" aria-label="FFGPMT emblem">
-              <circle cx="100" cy="100" r="95" fill="#0B1F3A"/>
-              <circle cx="100" cy="100" r="80" fill="#ffffff"/>
-              <circle cx="100" cy="100" r="72" fill="#F5F7FA" stroke="#F9A825" stroke-width="3"/>
-              <path d="M66 125c12-9 23-12 34-12s22 3 34 12V84c-12-9-23-12-34-12S78 75 66 84v41Z" fill="#147d6f"/>
-              <path d="M100 70c-6-13 10-21 8-32 15 10 20 27 7 38-5 4-10 6-15 6 4-4 5-8 0-12Z" fill="#F9A825"/>
-              <path d="M100 78v48" stroke="#0B1F3A" stroke-width="5" stroke-linecap="round"/>
-              <text x="100" y="151" text-anchor="middle" fill="#0B1F3A" font-size="18" font-weight="800" font-family="Arial, sans-serif">FFGPMT</text>
-              <text x="100" y="169" text-anchor="middle" fill="#5e6d7f" font-size="9" font-weight="700" letter-spacing="1" font-family="Arial, sans-serif">PUBLIC SERVICE</text>
-            </svg>
+            <img class="seal" src="logo-512.png" alt="FFGPMT logo: Freedom Fighter Gangadhar Prasad Memorial Trust" width="200" height="200" />
           </div>
           <h3>Freedom Fighter Gangadhar Prasad Memorial Trust</h3>
           <p>A family legacy expressed through public service.</p>
-          <div class="est"><span>Established</span><strong>15.08.2019</strong></div>
+          <div class="est"><span>Work began</span><strong>15.08.2019</strong></div>
+          <div class="est est2"><span>Trust registered</span><strong>05.06.2023</strong></div>
         </aside>
       </div>
     </section>
@@ -364,7 +372,7 @@
           <h2>Practical service, not just statements.</h2>
         </div>
         <div class="impact">
-          <div class="impact-item"><strong>2019</strong><span>Trust established</span></div>
+          <div class="impact-item"><strong>2019</strong><span>Public-service work began • Trust registered in 2023</span></div>
           <div class="impact-item"><strong>~6,000</strong><span>Farmers reached through vegetable seedling support</span></div>
           <div class="impact-item"><strong>130</strong><span>Languages represented in current ACS learning work</span></div>
           <div class="impact-item"><strong>Free</strong><span>Core online learning access on ACS Learn</span></div>
@@ -398,8 +406,8 @@
     <section class="section" id="network">
       <div class="wrap">
         <div class="center network-intro">
-          <p class="eyebrow">FFGPMT–ACS Digital Network</p>
-          <h2>All official websites — one connected public-service ecosystem.</h2>
+          <p class="eyebrow">FFGPMT-ACS Digital Network</p>
+          <h2>All official websites: one connected public-service ecosystem.</h2>
           <p class="lead" style="margin-top:18px">Each platform has a clear role. Use the cards below to open the official website directly.</p>
         </div>
 
@@ -442,6 +450,25 @@
             <a href="https://acsaarthi.com/" target="_blank" rel="noopener">Open acsaarthi.com ↗</a>
           </article>
         </div>
+
+        <div class="assoc-head">
+          <p class="eyebrow">Associated Organisations</p>
+          <h3>Separately registered societies associated with the FFGPMT ecosystem</h3>
+        </div>
+        <div class="assoc-grid">
+          <article class="site-card assoc">
+            <span class="domain">laxmigangafoundation.org</span>
+            <h3>Laxmi Ganga Foundation</h3>
+            <p>Registered Society, Khagaria, Bihar. Registration No. S00029, dated 07 May 2024. Education, digital inclusion and community development.</p>
+            <a href="https://laxmigangafoundation.org/" target="_blank" rel="noopener">Open laxmigangafoundation.org ↗</a>
+          </article>
+          <article class="site-card assoc">
+            <span class="domain">ngoreds.org</span>
+            <h3>Rural Environment Development Society (REDS)</h3>
+            <p>Registered Society, Khagaria, Bihar. Registration No. 1280, dated 02 Aug 2011. Rural development, education, environment and agriculture.</p>
+            <a href="https://ngoreds.org/" target="_blank" rel="noopener">Open ngoreds.org ↗</a>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -449,7 +476,7 @@
       <div class="wrap">
         <div class="center">
           <p class="eyebrow">Our Physical Network</p>
-          <h2>Applied Computer School™ — 3 learning centres in Bihar</h2>
+          <h2>Applied Computer School™: 3 learning centres in Bihar</h2>
           <p class="lead" style="margin-top:18px">The ACS network has public listings for centres in Chautham, Baijnathpur and Alauli. Each card below opens the location in Google Maps.</p>
         </div>
 
@@ -458,10 +485,10 @@
             <div class="centre-top">
               <div class="centre-no">Centre 01 • Khagaria</div>
               <h3>ACS Chautham</h3>
-              <p>Vidyarthi Nagar — founding / main ACS location</p>
+              <p>Vidyarthi Nagar: founding / main ACS location</p>
             </div>
             <div class="centre-body">
-              <p class="address"><strong>Address</strong><br>ACS Building, Vidyarthi Nagar, Karua Jawahartola Road, Chautham, Khagaria, Bihar — 851201</p>
+              <p class="address"><strong>Address</strong><br>ACS Building, Vidyarthi Nagar, Karua Jawahartola Road, Chautham, Khagaria, Bihar 851201</p>
               <div class="map-btn"><a href="https://www.google.com/maps/search/?api=1&query=Applied+Computer+School+Chautham+Khagaria+Bihar" target="_blank" rel="noopener">View on Google Maps ↗</a></div>
             </div>
           </article>
@@ -470,10 +497,10 @@
             <div class="centre-top">
               <div class="centre-no">Centre 02 • Saharsa</div>
               <h3>ACS Baijnathpur</h3>
-              <p>Station Road / SH-59 — Baijnathpur</p>
+              <p>Station Road / SH-59, Baijnathpur</p>
             </div>
             <div class="centre-body">
-              <p class="address"><strong>Address</strong><br>Station Road / SH-59, Baijnathpur, Saharsa, Bihar — 852221</p>
+              <p class="address"><strong>Address</strong><br>Station Road / SH-59, Baijnathpur, Saharsa, Bihar 852221</p>
               <div class="map-btn"><a href="https://www.google.com/maps/search/?api=1&query=Applied+Computer+School+Baijnathpur+Saharsa+Bihar" target="_blank" rel="noopener">View on Google Maps ↗</a></div>
             </div>
           </article>
@@ -482,10 +509,10 @@
             <div class="centre-top">
               <div class="centre-no">Centre 03 • Khagaria</div>
               <h3>ACS Alauli</h3>
-              <p>Ailaas Chowk / Ladaura Road — Alauli</p>
+              <p>Ailaas Chowk / Ladaura Road, Alauli</p>
             </div>
             <div class="centre-body">
-              <p class="address"><strong>Address</strong><br>Ailaas Chowk / Ladaura Road, Alauli, Khagaria, Bihar — 848203</p>
+              <p class="address"><strong>Address</strong><br>Ailaas Chowk / Ladaura Road, Alauli, Khagaria, Bihar 848203</p>
               <div class="map-btn"><a href="https://www.google.com/maps/search/?api=1&query=Applied+Computer+School+Alauli+Khagaria+Bihar" target="_blank" rel="noopener">View on Google Maps ↗</a></div>
             </div>
           </article>
@@ -517,15 +544,22 @@
           <p class="lead" style="margin-top:14px">Key statutory identifiers and government registrations associated with Freedom Fighter Gangadhar Prasad Memorial Trust.</p>
 
           <div class="legal-grid">
+            <div class="legal-card wide">
+              <span class="label">Trust Registration • Sub-Registry Office, Gogri (Khagaria)</span>
+              <strong>Serial No. 2849 • Deed No. 1 • Registered 05.06.2023</strong>
+              <small>Trust (Non-Government) under the Indian Trusts Act, 1882, as recorded on NGO DARPAN.</small>
+            </div>
             <div class="legal-card">
               <span class="label">NITI Aayog / NGO DARPAN</span>
               <strong>BR/2023/0349610</strong>
-              <small>NGO DARPAN identification.</small>
+              <small>NGO DARPAN identification • DARPAN registration date 28.06.2023.</small>
+              <a class="doc-link" href="darpan.pdf" target="_blank" rel="noopener">View DARPAN record (PDF) ↗</a>
             </div>
             <div class="legal-card">
               <span class="label">Ministry of Corporate Affairs</span>
               <strong>CSR00060931</strong>
-              <small>Registered for undertaking CSR activities.</small>
+              <small>Registered for undertaking CSR activities • Letter dated 16.10.2023.</small>
+              <a class="doc-link" href="csr1.pdf" target="_blank" rel="noopener">View CSR-1 approval letter (PDF) ↗</a>
             </div>
             <div class="legal-card">
               <span class="label">Income Tax • PAN</span>
@@ -535,12 +569,12 @@
             <div class="legal-card">
               <span class="label">Income Tax • Section 12A</span>
               <strong>URN: AAATF9793ME20231</strong>
-              <small>Provisional registration dated 28.11.2023 • AY 2024-25 to AY 2026-27.</small>
+              <small>Provisional registration dated 28.11.2023 for AY 2024-25 to AY 2026-27. That period has ended. Fresh registration has not yet been applied for.</small>
             </div>
             <div class="legal-card">
               <span class="label">Income Tax • Section 80G</span>
               <strong>URN: AAATF9793MF20231</strong>
-              <small>Provisional approval dated 28.11.2023 • AY 2024-25 to AY 2026-27.</small>
+              <small>Provisional approval dated 28.11.2023 for AY 2024-25 to AY 2026-27. That period has ended. Fresh approval has not yet been applied for.</small>
             </div>
             <div class="legal-card">
               <span class="label">Ministry of MSME • Udyam</span>
@@ -548,7 +582,7 @@
               <small>Micro enterprise • Major activity: Services • Registered 05.05.2024.</small>
             </div>
           </div>
-          <p class="legal-note">Status wording is intentionally shown as stated in the source documents. 12A and 80G are shown as provisional because the available Form 10AC orders are provisional registrations/approvals for the assessment years listed above.</p>
+          <p class="legal-note">Status wording is shown as stated in the source documents. The provisional 12A registration and 80G approval (Form 10AC) covered AY 2024-25 to AY 2026-27 only. Please do not assume a current 80G deduction: confirm the present status with the Trust before donating.</p>
         </div>
       </div>
     </section>
@@ -578,6 +612,14 @@
               <div class="ct-label">Official Website</div>
               <a href="https://ffgpmt.org/">ffgpmt.org</a>
             </div>
+            <div class="contact-card wide">
+              <div class="ct-label">Registered Office</div>
+              <address>“Laxmiganga”, Village and P.O. Bhutauli Malpa, Ward No. 17, P.S. Chautham, District Khagaria, Bihar 851201</address>
+            </div>
+            <div class="contact-card wide">
+              <div class="ct-label">Corporate Office</div>
+              <address>ACS Building, Vidyarthi Nagar, Ward No. 18, Village Karua, P.O. and P.S. Chautham, District Khagaria, Bihar 851201</address>
+            </div>
           </div>
         </div>
       </div>
@@ -594,8 +636,6 @@
             <span class="footer-chip"><strong>NGO DARPAN:</strong> BR/2023/0349610</span>
             <span class="footer-chip"><strong>CSR:</strong> CSR00060931</span>
             <span class="footer-chip"><strong>PAN:</strong> AAATF9793M</span>
-            <span class="footer-chip"><strong>12A:</strong> AAATF9793ME20231 • Provisional</span>
-            <span class="footer-chip"><strong>80G:</strong> AAATF9793MF20231 • Provisional</span>
             <span class="footer-chip"><strong>UDYAM:</strong> UDYAM-BR-17-0016724</span>
           </div>
         </div>
@@ -604,12 +644,14 @@
           Email: <a href="mailto:info@ffgpmt.org">info@ffgpmt.org</a><br>
           WhatsApp: <a href="https://wa.me/919431210092" target="_blank" rel="noopener">+91 94312 10092</a><br>
           Telephone: <a href="tel:+916244291192">06244 291192</a><br>
-          Website: <a href="https://ffgpmt.org/">ffgpmt.org</a>
+          Website: <a href="https://ffgpmt.org/">ffgpmt.org</a><br>
+          Registered office: “Laxmiganga”, Village and P.O. Bhutauli Malpa, Ward No. 17, P.S. Chautham, District Khagaria, Bihar 851201<br>
+          Corporate office: ACS Building, Vidyarthi Nagar, Ward No. 18, Village Karua, P.O. and P.S. Chautham, District Khagaria, Bihar 851201
         </div>
       </div>
       <div class="footer-bottom">
         <span>© 2026 Freedom Fighter Gangadhar Prasad Memorial Trust (FFGPMT)</span>
-        <span>Public-service information • Mobile-first</span>
+        <span><a href="legal.html">Brand &amp; Legal Status</a> • Public-service information • Mobile-first</span>
       </div>
     </div>
   </footer>
